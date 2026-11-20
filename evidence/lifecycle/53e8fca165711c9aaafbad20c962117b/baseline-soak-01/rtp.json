@@ -1,0 +1,15 @@
+{
+  "echo_matched_packets": 0,
+  "pbx_to_uac": {
+    "capture_error": "Capture missing, incomplete, or reported kernel drops",
+    "receiver": "sipp-rx",
+    "sender": "pbx-tx",
+    "streams": {}
+  },
+  "uac_to_pbx": {
+    "capture_error": "Capture missing, incomplete, or reported kernel drops",
+    "receiver": "pbx-rx",
+    "sender": "sipp-tx",
+    "streams": {}
+  }
+}

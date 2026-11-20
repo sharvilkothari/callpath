@@ -1,0 +1,127 @@
+{
+  "echo_matched_packets": 392,
+  "pbx_to_uac": {
+    "capture_error": null,
+    "receiver": "sipp-rx",
+    "sender": "pbx-tx",
+    "streams": {
+      "10026/6002/869388157": {
+        "duplicates": 0,
+        "jitter_ms": 5.924167761610465,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 80,
+        "sent": 80,
+        "unmatched_received": 0
+      },
+      "10036/6000/1809873884": {
+        "duplicates": 0,
+        "jitter_ms": 2.9368981789315267,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 78,
+        "sent": 78,
+        "unmatched_received": 0
+      },
+      "10052/6004/82349980": {
+        "duplicates": 0,
+        "jitter_ms": 2.7659227479630393,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 78,
+        "sent": 78,
+        "unmatched_received": 0
+      },
+      "10120/6008/66502326": {
+        "duplicates": 0,
+        "jitter_ms": 7.994691506444872,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 78,
+        "sent": 78,
+        "unmatched_received": 0
+      },
+      "10162/6006/1916548778": {
+        "duplicates": 0,
+        "jitter_ms": 13.15838332242468,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 78,
+        "sent": 78,
+        "unmatched_received": 0
+      }
+    }
+  },
+  "uac_to_pbx": {
+    "capture_error": null,
+    "receiver": "pbx-rx",
+    "sender": "sipp-tx",
+    "streams": {
+      "6000/10036/3390111744": {
+        "duplicates": 0,
+        "jitter_ms": 2.890415798738472,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 78,
+        "sent": 78,
+        "unmatched_received": 0
+      },
+      "6002/10026/3390111746": {
+        "duplicates": 0,
+        "jitter_ms": 5.902516136228055,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 80,
+        "sent": 80,
+        "unmatched_received": 0
+      },
+      "6004/10052/3390111748": {
+        "duplicates": 0,
+        "jitter_ms": 2.5930891544853667,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 78,
+        "sent": 78,
+        "unmatched_received": 0
+      },
+      "6006/10162/3390111750": {
+        "duplicates": 0,
+        "jitter_ms": 13.063929452854346,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 78,
+        "sent": 78,
+        "unmatched_received": 0
+      },
+      "6008/10120/3390111752": {
+        "duplicates": 0,
+        "jitter_ms": 7.95502620050546,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 78,
+        "sent": 78,
+        "unmatched_received": 0
+      }
+    }
+  }
+}

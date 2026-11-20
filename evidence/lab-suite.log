@@ -1,0 +1,93 @@
+{
+  "cleanup": {
+    "errors": [],
+    "remaining": [],
+    "verified": true
+  },
+  "error": null,
+  "ok": true,
+  "tools": {
+    "asterisk": "Asterisk 22.5.2~dfsg+~cs6.15.60671435-1",
+    "ip": "ip utility, iproute2-6.19.0, libbpf 1.6.3",
+    "kernel": "6.10.14-linuxkit",
+    "python": "3.14.4",
+    "sipp": "SIPp v3.7.7-TLS-SCTP-PCAP-SHA256.",
+    "tc": "tc utility, iproute2-6.19.0, libbpf 1.6.3",
+    "tcpdump": "tcpdump version 4.99.6",
+    "tshark": "TShark (Wireshark) 4.6.4."
+  }
+}
+Run f21b71952e67f1be019e17be8ae95b4e
+baseline-smoke-01
+SUCCEEDED /results/f21b71952e67f1be019e17be8ae95b4e
+SUCCEEDED and manifest verified for f21b71952e67f1be019e17be8ae95b4e
+Run 72142963545ae7f5e32923f541c1db91
+baseline-baseline-01
+baseline-baseline-02
+baseline-baseline-03
+baseline-baseline-04
+baseline-baseline-05
+SUCCEEDED /results/72142963545ae7f5e32923f541c1db91
+SUCCEEDED and manifest verified for 72142963545ae7f5e32923f541c1db91
+Run 2b4aacd30611ae2dc335506a0c7e51b5
+baseline-ramp-2-01
+baseline-ramp-5-01
+baseline-ramp-10-01
+SUCCEEDED /results/2b4aacd30611ae2dc335506a0c7e51b5
+SUCCEEDED and manifest verified for 2b4aacd30611ae2dc335506a0c7e51b5
+Run af4330488e66e827e027aafcd143a2e5
+baseline-soak-01
+SUCCEEDED /results/af4330488e66e827e027aafcd143a2e5
+SUCCEEDED and manifest verified for af4330488e66e827e027aafcd143a2e5
+Run 199c372be2280c31924d366ff8b2ca31
+baseline-delay-01
+baseline-delay-02
+baseline-delay-03
+baseline-delay-04
+baseline-delay-05
+impaired-delay-01
+impaired-delay-02
+impaired-delay-03
+impaired-delay-04
+impaired-delay-05
+SUCCEEDED /results/199c372be2280c31924d366ff8b2ca31
+SUCCEEDED and manifest verified for 199c372be2280c31924d366ff8b2ca31
+Run 23440a2b7f1fde112849808470c1db61
+baseline-delay-01
+baseline-delay-02
+baseline-delay-03
+baseline-delay-04
+baseline-delay-05
+SUCCEEDED /results/23440a2b7f1fde112849808470c1db61
+SUCCEEDED and manifest verified for 23440a2b7f1fde112849808470c1db61
+Run ae184d1adeadc63ba85fbead95b6c93a
+baseline-loss-01
+baseline-loss-02
+baseline-loss-03
+baseline-loss-04
+baseline-loss-05
+impaired-loss-01
+impaired-loss-02
+impaired-loss-03
+impaired-loss-04
+impaired-loss-05
+SUCCEEDED /results/ae184d1adeadc63ba85fbead95b6c93a
+SUCCEEDED and manifest verified for ae184d1adeadc63ba85fbead95b6c93a
+Run 1c46f765a737da9b26fa08dbc724d511
+baseline-dtmf-01
+baseline-transfer-01
+SUCCEEDED /results/1c46f765a737da9b26fa08dbc724d511
+SUCCEEDED and manifest verified for 1c46f765a737da9b26fa08dbc724d511
+Run edf2ce69eb170dd4854d003a84fa1a15
+baseline-echo-01
+baseline-echo-02
+baseline-echo-03
+baseline-echo-04
+baseline-echo-05
+impaired-echo-01
+impaired-echo-02
+impaired-echo-03
+impaired-echo-04
+impaired-echo-05
+SUCCEEDED /results/edf2ce69eb170dd4854d003a84fa1a15
+SUCCEEDED and manifest verified for edf2ce69eb170dd4854d003a84fa1a15

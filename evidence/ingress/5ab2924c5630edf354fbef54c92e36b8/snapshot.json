@@ -1,0 +1,91 @@
+{
+  "file_hashes": {
+    "asterisk/asterisk.conf": "0663f713dc8b3c2dafc0a1c5328c2f9842078177c8c707fabaef021df608e67c",
+    "asterisk/cdr.conf": "19f41e019e8decf4346d48583a11744e1221b266dc483a9cb62144fdd88da847",
+    "asterisk/cel.conf": "d6b6bd8da912c014399c55510d893ee90ad48f0c7b05df4fb76920d8d21921c8",
+    "asterisk/extensions.conf": "52c00ee2a7a68c4ac70d9a46326d07482fd7815f3a730f2e3a5710efc8689db5",
+    "asterisk/logger.conf": "b659519162138a67f294b674ce7e62df7d87a837e4d01b2c1f20c438c8c24d65",
+    "asterisk/manager.conf": "39faa0a353f047c78bbb47ca6c37a743cdd8dd97ad46c5747aea8cc062601131",
+    "asterisk/modules.conf": "9cfdf07ffaaf034d6963dab3bc10c670dde25a2817484f0ce335d7ab85ea95f2",
+    "asterisk/pjsip.conf": "1f626555d212c9a3456a2561789518186f805721178318d72b63c2df4dc88e84",
+    "asterisk/rtp.conf": "cccf307fdf9e6e4b7daf1cfd2fddbd6ee3ae4ad4daebd764471895c21e7ad5f6",
+    "callpath/__init__.py": "29f03ba068bc8ca4a0bd87b6c9ceff47e715a2d5dce1031f62404b628bc4d2a1",
+    "callpath/__main__.py": "e6aee8b28ddac7e7deb3ecb2e62e5e84b176ebc7a461ca7dee2145ef7e238325",
+    "callpath/metrics.py": "058f3bb85c62066d2def019c7aa663234a783d242cd6b5523a91d446f3f0fbe8",
+    "callpath/model.py": "b0e7c631289d79570b900ead72ea67e9a56ed53e1f67dc70e5dc016d9b2f72cc",
+    "callpath/report.py": "97e1b55562de3008a32b4c4f1722478c12fd00b6b71bf736eacea4920c622559",
+    "callpath/runner.py": "00a64e856848bca49c975871451d9a31dbd6eff1f3278b6ea1614fc5bbe7bcf0",
+    "callpath/storage.py": "af8f3a85c5d4796df13da7369b45c7355a23f60edb5c27fb992d5ab704ed8e57",
+    "network/ami.py": "5168bc138405d466b888bec4f7974549adcb2d2c1f5c72b9de042231dcdf2dbd",
+    "network/entrypoint": "4e804c39d63f68dce0b75ef8848b4242ef784f21b0cd49d7b8c1347dad76ece1",
+    "network/helper.py": "82e8c2879914b94fd677f990dc75f3d6c05ee6dfda1830364a7f83a9d3557a2d",
+    "network/sipp_worker.py": "bb5779369a85e05b1120420f144697dfce77891f0412c43260ec5f30a1747af6",
+    "network/tone.py": "ca8ae7556f128ae0122bd3914effb145e99052d82f389660fc3ce936820393d3",
+    "scenarios/call.xml": "dfed7a8cba2ff95f37a99d0da8d77ee09d8ff3839c0ae7e056ba2129601e27fb",
+    "scenarios/dtmf.xml": "9cc1477127d24985bff937bcce36c68479184b7f1d301e50aa898b75327cb6ae",
+    "scenarios/tone.pcmu": "46653b156c0e5e520aa089fd208bf1784cfadacc654f07353ec4ceec827b1236",
+    "scenarios/transfer.xml": "f521f4aa899dee3f562b4484ab45a5d0f5f92e131e3154e19fae5214de778ef3"
+  },
+  "media": {
+    "clock_hz": 8000,
+    "codec": "PCMU",
+    "payload_type": 0,
+    "ptime_ms": 20,
+    "source": "SIPp generated tone; Asterisk Echo"
+  },
+  "profile": {
+    "burst_end_pct": 25,
+    "burst_start_pct": 0,
+    "delay_ms": 0,
+    "duplicate_pct": 0,
+    "jitter_ms": 0,
+    "loss_pct": 8.0,
+    "path": "both",
+    "placement": "ingress",
+    "queue_limit": 1000,
+    "reorder_pct": 0,
+    "seed": 42,
+    "traffic": "rtp"
+  },
+  "repeats": 5,
+  "run_id": "5ab2924c5630edf354fbef54c92e36b8",
+  "runtime": {
+    "boot_id": "d88ae458-ddfa-4ac0-a639-86a768d2a9a5",
+    "machine": "aarch64",
+    "mode": "isolated_linux_container"
+  },
+  "scenario": {
+    "id": "S5",
+    "stages": [
+      {
+        "label": "loss",
+        "load": {
+          "calls": 6,
+          "concurrency": 6,
+          "cps": 2,
+          "hold_ms": 1500,
+          "timeout_s": 45
+        }
+      }
+    ],
+    "version": "1.0"
+  },
+  "schema_version": 1,
+  "target": {
+    "allowlisted": true,
+    "host": "10.200.1.3",
+    "id": "ast_local",
+    "port": 5060,
+    "transport": "UDP"
+  },
+  "tools": {
+    "asterisk": "Asterisk 22.5.2~dfsg+~cs6.15.60671435-1",
+    "ip": "ip utility, iproute2-6.19.0, libbpf 1.6.3",
+    "kernel": "6.8.0-147-generic",
+    "python": "3.14.4",
+    "sipp": "SIPp v3.7.7-TLS-SCTP-PCAP-SHA256.",
+    "tc": "tc utility, iproute2-6.19.0, libbpf 1.6.3",
+    "tcpdump": "tcpdump version 4.99.6",
+    "tshark": "TShark (Wireshark) 4.6.4."
+  }
+}

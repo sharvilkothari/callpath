@@ -1,0 +1,170 @@
+{
+  "pbx/cp-ifb": [
+    {
+      "backlog": 0,
+      "bytes": 102858,
+      "drops": 0,
+      "handle": "1:",
+      "kind": "prio",
+      "options": {
+        "bands": 2,
+        "multiqueue": false,
+        "priomap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "overlimits": 0,
+      "packets": 462,
+      "qlen": 0,
+      "refcnt": 2,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 94802,
+      "drops": 0,
+      "handle": "10:",
+      "kind": "netem",
+      "options": {
+        "ecn": false,
+        "gap": 0,
+        "limit": 1000,
+        "seed": 2810616196734128771
+      },
+      "overlimits": 0,
+      "packets": 443,
+      "parent": "1:2",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ],
+  "pbx/cp-veth-pbx": [
+    {
+      "backlog": 0,
+      "bytes": 0,
+      "drops": 0,
+      "handle": "0:",
+      "kind": "noqueue",
+      "options": {},
+      "overlimits": 0,
+      "packets": 0,
+      "qlen": 0,
+      "refcnt": 2,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 201000,
+      "drops": 0,
+      "handle": "ffff:",
+      "kind": "clsact",
+      "options": {},
+      "overlimits": 0,
+      "packets": 936,
+      "parent": "ffff:fff1",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ],
+  "sipp/cp-ifb": [
+    {
+      "backlog": 0,
+      "bytes": 103758,
+      "drops": 0,
+      "handle": "1:",
+      "kind": "prio",
+      "options": {
+        "bands": 2,
+        "multiqueue": false,
+        "priomap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "overlimits": 0,
+      "packets": 462,
+      "qlen": 0,
+      "refcnt": 2,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 94802,
+      "drops": 0,
+      "handle": "10:",
+      "kind": "netem",
+      "options": {
+        "ecn": false,
+        "gap": 0,
+        "limit": 1000,
+        "seed": 11857146392049499378
+      },
+      "overlimits": 0,
+      "packets": 443,
+      "parent": "1:2",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ],
+  "sipp/cp-veth-sipp": [
+    {
+      "backlog": 0,
+      "bytes": 0,
+      "drops": 0,
+      "handle": "0:",
+      "kind": "noqueue",
+      "options": {},
+      "overlimits": 0,
+      "packets": 0,
+      "qlen": 0,
+      "refcnt": 2,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 201090,
+      "drops": 0,
+      "handle": "ffff:",
+      "kind": "clsact",
+      "options": {},
+      "overlimits": 0,
+      "packets": 937,
+      "parent": "ffff:fff1",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "aggregates": {},
+  "checks": [],
+  "cleanup": {
+    "container": "callpath-f6d7ff7582e9a153cb1b9e1f26527eee",
+    "engine_id": "31e1e2d9-dc62-4b85-a16e-0c0c79010622",
+    "message": "Interrupted controller; its lab teardown was verified",
+    "remaining": [],
+    "verified": true
+  },
+  "comparison": {},
+  "notes": [
+    "Experiments describe the isolated local Asterisk lab. Carrier, production and conversational quality conclusions require separate evidence.",
+    "The seeded netem sequence depends on packet order and the host schedule.",
+    "Qdisc drops may include both configured impairment and queue saturation.",
+    "Setup timings are SIP INVITE to first successful response. Echo RTT requires uniquely matched round-trip payloads.",
+    "RTP loss uses sender-to-receiver identity matching. Jitter is the median of final RFC 3550 estimates across streams.",
+    "CPU utilization is process-based, in units of one logical CPU.",
+    "Fewer than five planned repeats per condition; treat observed spread as preliminary."
+  ],
+  "run_id": "f6d7ff7582e9a153cb1b9e1f26527eee",
+  "snapshot_sha256": "194d8aa1187a2642f863cb97eeba4d38db42db2893b23ad118b964579bef0879",
+  "status": "CANCELLED",
+  "trials": []
+}

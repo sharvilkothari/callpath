@@ -1,0 +1,51 @@
+#!/bin/sh
+set -eu
+root=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
+image=${CALLPATH_IMAGE:-callpath-local:dev}
+case "${1:-}" in
+  build)
+    shift
+    exec docker build -t "$image" "$@" "$root"
+    ;;
+  doctor|run|janitor) ;;
+  *)
+    export PYTHONDONTWRITEBYTECODE=1
+    cd "$root"
+    exec "${CALLPATH_PYTHON:-python3}" -m callpath --artifacts "${CALLPATH_ARTIFACTS:-artifacts}" "$@"
+    ;;
+esac
+
+umask 077
+results=${CALLPATH_ARTIFACTS:-"$root/artifacts"}
+mkdir -p "$results"
+results=$(CDPATH='' cd -- "$results" && pwd)
+uid=${CALLPATH_UID:-$(id -u)}
+gid=${CALLPATH_GID:-$(id -g)}
+engine=$(docker info --format '{{.ID}}')
+active=$(docker ps -a --filter label=io.callpath.run --format '{{.Names}}')
+
+run_container() {
+  exec docker run --rm --init --network none --pids-limit 256 \
+    --cap-add SYS_ADMIN --cap-add NET_ADMIN --security-opt apparmor=unconfined \
+    --env CALLPATH_UID="$uid" --env CALLPATH_GID="$gid" --env CALLPATH_ENGINE_ID="$engine" \
+    --env CALLPATH_EXISTING_CONTAINERS="$active" \
+    --mount "type=bind,src=$results,dst=/results" "$@"
+}
+
+if [ "$1" = run ]; then
+  id=
+  expect_id=false
+  for arg in "$@"; do
+    if $expect_id; then id=$arg; expect_id=false; fi
+    if [ "$arg" = --run-id ]; then expect_id=true; fi
+  done
+  if $expect_id; then exit 2; fi
+  if [ -z "$id" ]; then id=$(od -An -N16 -tx1 /dev/urandom | tr -d ' \n'); fi
+  case "$id" in *[!0-9a-f]*) exit 2 ;; esac
+  [ "${#id}" -eq 32 ] || exit 2
+  [ ! -e "$results/$id" ] || { printf '%s\n' "Run $id already exists" >&2; exit 2; }
+  run_container --name "callpath-$id" --hostname "callpath-$id" --label "io.callpath.run=$id" \
+    "$image" --artifacts /results "$@" --run-id "$id"
+else
+  run_container "$image" --artifacts /results "$@"
+fi

@@ -1,0 +1,65 @@
+{
+  "pbx/cp-veth-pbx": [
+    {
+      "backlog": 0,
+      "bytes": 0,
+      "drops": 0,
+      "handle": "0:",
+      "kind": "noqueue",
+      "options": {},
+      "overlimits": 0,
+      "packets": 0,
+      "qlen": 0,
+      "refcnt": 2,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 682491,
+      "drops": 0,
+      "handle": "ffff:",
+      "kind": "clsact",
+      "options": {},
+      "overlimits": 0,
+      "packets": 3076,
+      "parent": "ffff:fff1",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ],
+  "sipp/cp-veth-sipp": [
+    {
+      "backlog": 0,
+      "bytes": 677991,
+      "drops": 0,
+      "handle": "10:",
+      "kind": "netem",
+      "options": {
+        "ecn": false,
+        "gap": 0,
+        "limit": 1000,
+        "seed": 11478217205275008742
+      },
+      "overlimits": 0,
+      "packets": 3076,
+      "qlen": 0,
+      "refcnt": 9,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 678081,
+      "drops": 0,
+      "handle": "ffff:",
+      "kind": "clsact",
+      "options": {},
+      "overlimits": 0,
+      "packets": 3077,
+      "parent": "ffff:fff1",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ]
+}

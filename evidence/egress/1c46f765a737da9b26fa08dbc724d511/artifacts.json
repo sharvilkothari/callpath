@@ -1,0 +1,332 @@
+[
+  {
+    "path": "baseline-dtmf-01/ami.jsonl",
+    "sha256": "c7fc70c77e54dab54bbf41fa122cec48f33f7c57d5470520358616f0c039224c",
+    "size_bytes": 8915,
+    "type": "events"
+  },
+  {
+    "path": "baseline-dtmf-01/ami.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/asterisk-stderr.log",
+    "sha256": "b1a2f746d22f5b236ded1530fa40af001c967c4ea6682ed7ea51fd4e9619b59a",
+    "size_bytes": 68,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/asterisk.log",
+    "sha256": "147f773f36f73b905a8d1fe179057b3b1dcdd9ff41cf9a826617388b4d1f9620",
+    "size_bytes": 16276,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/channels.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/dtmf.xml",
+    "sha256": "9cc1477127d24985bff937bcce36c68479184b7f1d301e50aa898b75327cb6ae",
+    "size_bytes": 2252,
+    "type": "file"
+  },
+  {
+    "path": "baseline-dtmf-01/dtmf_150_counts.csv",
+    "sha256": "73d798df9dc379e0c725a3470c3f67398d724dfe065bd567bea8ff4b361d9c79",
+    "size_bytes": 1814,
+    "type": "statistics"
+  },
+  {
+    "path": "baseline-dtmf-01/dtmf_150_rtt.csv",
+    "sha256": "a6cd31ad17af8c37566a92f854535175534affa319fb42cd3725f15782792f91",
+    "size_bytes": 117,
+    "type": "statistics"
+  },
+  {
+    "path": "baseline-dtmf-01/events.json",
+    "sha256": "0e9a15044324d6c11aca369affeef415796b633fd219fedcd39aadc5c843aad2",
+    "size_bytes": 11762,
+    "type": "record"
+  },
+  {
+    "path": "baseline-dtmf-01/pbx-rx.log",
+    "sha256": "7b192b80117fb88f8510e77870f6120cb45d0717e0b9f879eced5f13b7ca8830",
+    "size_bytes": 171,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/pbx-rx.pcap",
+    "sha256": "a2fc6113804d0b155e7e5ecb6ebc070a8d21e8bf806bf039192a1ef38936320a",
+    "size_bytes": 76829,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-dtmf-01/pbx-tx.log",
+    "sha256": "51609635f8a3ecff8be7fe780f37b761fda9b4b7b026210a6e7e150060d245e4",
+    "size_bytes": 169,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/pbx-tx.pcap",
+    "sha256": "958892cf5a94bc62cde6b3b4abbac3cfe4014eb3c3a47b7d2a40064f69862145",
+    "size_bytes": 77019,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-dtmf-01/qdisc.json",
+    "sha256": "b618c553f82d8ae5868d67e0c1fab4779ffd32067b90392ea4b8c7fc279e8814",
+    "size_bytes": 1191,
+    "type": "record"
+  },
+  {
+    "path": "baseline-dtmf-01/resources.json",
+    "sha256": "904676b940af6647e1365cb1538d3c690e00a1ced47aeaf1911b3ebe40f7a0d7",
+    "size_bytes": 6976,
+    "type": "record"
+  },
+  {
+    "path": "baseline-dtmf-01/result.json",
+    "sha256": "893e06f7c716cfe1174eefb619db623e026c176f35142f00b1fef761c9e5257a",
+    "size_bytes": 5950,
+    "type": "record"
+  },
+  {
+    "path": "baseline-dtmf-01/rtp.json",
+    "sha256": "8e9396695194d73c71c3f538f6c6f7aca0da60b8296806db1f09abd667ad11e6",
+    "size_bytes": 2846,
+    "type": "record"
+  },
+  {
+    "path": "baseline-dtmf-01/sipp-rx.log",
+    "sha256": "1e2ebd94f6d2f144b6a1d152e5b3362677eb81b3ff26099449d923939a1cdc6c",
+    "size_bytes": 172,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/sipp-rx.pcap",
+    "sha256": "97a4c47b63214726c3219623c5b5d0dff012694dfdaea292f2901a4fbe14b51f",
+    "size_bytes": 77019,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-dtmf-01/sipp-stats.csv",
+    "sha256": "235084bce96407d27dce378b18ad2979c7881fb6e77a3480d4f6c32c0d2243d0",
+    "size_bytes": 5307,
+    "type": "statistics"
+  },
+  {
+    "path": "baseline-dtmf-01/sipp-stderr.log",
+    "sha256": "9a0e484e7ed27adccbf4752f54e35d17fee050d693e00b1f3020af95ff257a98",
+    "size_bytes": 44,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/sipp-tx.log",
+    "sha256": "1b87b4c3bdbf99d02066c6d53813d6b82c5f6dea0080cfb5ad3f82483a6fe991",
+    "size_bytes": 169,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/sipp-tx.pcap",
+    "sha256": "55497487c1d5c05eb8759570433bccc685ce740feb2025da8480bef762ec608b",
+    "size_bytes": 76829,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-dtmf-01/sipp.log",
+    "sha256": "697b14a985aa83fdd701c2b8f4b461b45fd25d82264da7203108121341ae9268",
+    "size_bytes": 3458,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/sockets.log",
+    "sha256": "031b951df8de75868c105f7a118ee95e728be1f759ba0ece8f5f33041d85c1de",
+    "size_bytes": 171,
+    "type": "log"
+  },
+  {
+    "path": "baseline-dtmf-01/trial.json",
+    "sha256": "b208e08fbf0355137bcb42d07f7cb9e3fb841b86185a05da56a9eba72fb4ea23",
+    "size_bytes": 463,
+    "type": "record"
+  },
+  {
+    "path": "baseline-transfer-01/ami.jsonl",
+    "sha256": "620c1855ce3103c5c0d70a8850dd8fce95a2956ddfb6e1963504e278a00c50d2",
+    "size_bytes": 32455,
+    "type": "events"
+  },
+  {
+    "path": "baseline-transfer-01/ami.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/asterisk-stderr.log",
+    "sha256": "b1a2f746d22f5b236ded1530fa40af001c967c4ea6682ed7ea51fd4e9619b59a",
+    "size_bytes": 68,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/asterisk.log",
+    "sha256": "02730931a89276813ffbb61763fb0829ef2c3a65afade69524958147088d471c",
+    "size_bytes": 16408,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/channels.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/events.json",
+    "sha256": "4382af353b573d4b5254f5a85370f4afd235de1cb26410e119c874fa511c8ab7",
+    "size_bytes": 41039,
+    "type": "record"
+  },
+  {
+    "path": "baseline-transfer-01/pbx-rx.log",
+    "sha256": "e1c5a1dee9aee248d0e3d4ac8b5bf030c150b258da1ce2f72ab560e54279f22a",
+    "size_bytes": 169,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/pbx-rx.pcap",
+    "sha256": "cd2e030fee0be4046323158383b1e21a000bead67e39f1e84a32cf238179bcf2",
+    "size_bytes": 10805,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-transfer-01/pbx-tx.log",
+    "sha256": "e93a16557090e6a46c0c4d581f7b3003cc00531226e97eb3ce9fd08ef9c629a1",
+    "size_bytes": 167,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/pbx-tx.pcap",
+    "sha256": "d7a7de8905187395e38437f6218f0cab0868d421c9d73f15e85b0d8a1022feed",
+    "size_bytes": 15350,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-transfer-01/qdisc.json",
+    "sha256": "1507914facf99fe3fa542ebcfd933288b48f486020223422cf7d2734a01bdaf3",
+    "size_bytes": 1188,
+    "type": "record"
+  },
+  {
+    "path": "baseline-transfer-01/resources.json",
+    "sha256": "cb12a0333fa4162d783f4c2b9801723cea09c917b2df494adcb3823ad8d9031d",
+    "size_bytes": 14143,
+    "type": "record"
+  },
+  {
+    "path": "baseline-transfer-01/result.json",
+    "sha256": "4523c2aedd2f8e5351c8d3c74bc6d86072e472500bf4407469724bc84c9cb728",
+    "size_bytes": 6251,
+    "type": "record"
+  },
+  {
+    "path": "baseline-transfer-01/rtp.json",
+    "sha256": "fb84efb1cd275ee6659a6aea7a717b1963c0b23af9ff0b7e0c862d0974d5ff06",
+    "size_bytes": 270,
+    "type": "record"
+  },
+  {
+    "path": "baseline-transfer-01/sipp-rx.log",
+    "sha256": "cff5744fa2ecd94dd030766117ddb20d6bf0aae02cfb1d1af6bfc5ce0da63255",
+    "size_bytes": 170,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/sipp-rx.pcap",
+    "sha256": "4d44611e3bc8a659d4780989fe7187cefeb4cb2df8b647c6e5ce35979ef9d1a7",
+    "size_bytes": 15350,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-transfer-01/sipp-stats.csv",
+    "sha256": "f6dd6093ff1d7353ad014ff0b05dbe1a442eeecff6619ac70300c29aba707408",
+    "size_bytes": 7827,
+    "type": "statistics"
+  },
+  {
+    "path": "baseline-transfer-01/sipp-stderr.log",
+    "sha256": "9a0e484e7ed27adccbf4752f54e35d17fee050d693e00b1f3020af95ff257a98",
+    "size_bytes": 44,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/sipp-tx.log",
+    "sha256": "e93a16557090e6a46c0c4d581f7b3003cc00531226e97eb3ce9fd08ef9c629a1",
+    "size_bytes": 167,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/sipp-tx.pcap",
+    "sha256": "3e0ba83c753ff7d19d358fdbed9077edd61b8c6dbc3bbd0c580fa0a57272acd9",
+    "size_bytes": 10805,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-transfer-01/sipp.log",
+    "sha256": "2d3b7e37a61c5b0c88f15a96ce9e02fb92a3e1ea763958cc32f0343fd590ff5c",
+    "size_bytes": 3667,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/sockets.log",
+    "sha256": "50aebc90eb59b21813c40f74dbcbd28bd5a05769a0a7bd166a25c5239bed4279",
+    "size_bytes": 661,
+    "type": "log"
+  },
+  {
+    "path": "baseline-transfer-01/transfer.xml",
+    "sha256": "f521f4aa899dee3f562b4484ab45a5d0f5f92e131e3154e19fae5214de778ef3",
+    "size_bytes": 2322,
+    "type": "file"
+  },
+  {
+    "path": "baseline-transfer-01/transfer_314_counts.csv",
+    "sha256": "553f784e27d6ce288695cead5885b73e47e6a1f9e08aa45fa76c05a32fca0c6d",
+    "size_bytes": 2896,
+    "type": "statistics"
+  },
+  {
+    "path": "baseline-transfer-01/transfer_314_rtt.csv",
+    "sha256": "709cf8e8873f99feb989009235541d61279068aff961e13539f41425286ba68e",
+    "size_bytes": 104,
+    "type": "statistics"
+  },
+  {
+    "path": "baseline-transfer-01/trial.json",
+    "sha256": "628d66e7b16383f804d7cba91afd18849cbfc21af7ce799715e373d37bcc8dca",
+    "size_bytes": 467,
+    "type": "record"
+  },
+  {
+    "path": "report.json",
+    "sha256": "e1148be67892e9f1f7f0181f3ea4b01a8d34fffd2aebce5cc90206037bd61e8f",
+    "size_bytes": 37804,
+    "type": "record"
+  },
+  {
+    "path": "report.md",
+    "sha256": "f55e036eb5982d7b6ddd48816007679bf4726515c1ec17410fc46c69c335e2c2",
+    "size_bytes": 7252,
+    "type": "report"
+  },
+  {
+    "path": "snapshot.json",
+    "sha256": "e82669d56b455c57e1cc19357568aa0a6f1f90a0e8ec630007c17efbaa4cefd9",
+    "size_bytes": 4048,
+    "type": "record"
+  }
+]

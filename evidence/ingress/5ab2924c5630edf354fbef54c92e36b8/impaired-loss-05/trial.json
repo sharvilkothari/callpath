@@ -1,0 +1,25 @@
+{
+  "id": "afd4e400e2de4f709bbf2a8a491e1f0b",
+  "load": {
+    "calls": 6,
+    "concurrency": 6,
+    "cps": 2,
+    "hold_ms": 1500,
+    "timeout_s": 45
+  },
+  "profile": {
+    "burst_end_pct": 25,
+    "burst_start_pct": 0,
+    "delay_ms": 0,
+    "duplicate_pct": 0,
+    "jitter_ms": 0,
+    "loss_pct": 8.0,
+    "path": "both",
+    "placement": "ingress",
+    "queue_limit": 1000,
+    "reorder_pct": 0,
+    "seed": 42,
+    "traffic": "rtp"
+  },
+  "stage": "loss"
+}

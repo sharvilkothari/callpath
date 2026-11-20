@@ -1,0 +1,9 @@
+{
+  "completed_trials": 1,
+  "container": "callpath-53e8fca165711c9aaafbad20c962117b",
+  "created_at": "2026-11-16T19:41:27.519923+00:00",
+  "engine_id": "31e1e2d9-dc62-4b85-a16e-0c0c79010622",
+  "run_id": "53e8fca165711c9aaafbad20c962117b",
+  "status": "CANCELLED",
+  "updated_at": "2026-11-16T19:41:31.023573+00:00"
+}

@@ -1,0 +1,238 @@
+{
+  "cleanup": {
+    "errors": [],
+    "remaining": [],
+    "verified": true
+  },
+  "condition": "baseline",
+  "directory": "baseline-loss-01",
+  "id": "7eb59d8d015248e3adf9860667d0584d",
+  "iteration": 1,
+  "metrics": {
+    "asterisk_channels_remaining": {
+      "availability": "available",
+      "direction": "pbx_channel",
+      "source": "asterisk_cli",
+      "unit": "count",
+      "value": 0
+    },
+    "asterisk_cpu_pct_peak": {
+      "availability": "available",
+      "direction": "asterisk",
+      "source": "procfs",
+      "unit": "pct_one_logical_cpu",
+      "value": 9.619917076320524
+    },
+    "asterisk_rss_mib_peak": {
+      "availability": "available",
+      "direction": "asterisk",
+      "source": "procfs",
+      "unit": "MiB",
+      "value": 210.9765625
+    },
+    "call_attempts": {
+      "availability": "available",
+      "direction": "uac_to_uas",
+      "source": "sipp_csv",
+      "unit": "count",
+      "value": 8
+    },
+    "call_setup_latency_max_ms": {
+      "availability": "available",
+      "direction": "uac_to_uas",
+      "source": "sipp_rtt",
+      "unit": "ms",
+      "value": 6.0
+    },
+    "call_setup_latency_p50_ms": {
+      "availability": "available",
+      "direction": "uac_to_uas",
+      "source": "sipp_rtt",
+      "unit": "ms",
+      "value": 2.0
+    },
+    "call_setup_latency_p95_ms": {
+      "availability": "available",
+      "direction": "uac_to_uas",
+      "source": "sipp_rtt",
+      "unit": "ms",
+      "value": 6.0
+    },
+    "concurrent_calls_peak": {
+      "availability": "available",
+      "direction": "lab_call",
+      "source": "sipp_csv_sampled",
+      "unit": "count",
+      "value": 4
+    },
+    "cps_achieved": {
+      "availability": "available",
+      "direction": "uac_to_uas",
+      "source": "sipp_csv",
+      "unit": "calls_per_sec",
+      "value": 1.438
+    },
+    "cps_configured": {
+      "availability": "available",
+      "direction": "uac_to_uas",
+      "source": "run_snapshot",
+      "unit": "calls_per_sec",
+      "value": 2
+    },
+    "echo_unique_payload_match_rate": {
+      "availability": "available",
+      "direction": "round_trip",
+      "source": "tshark_echo",
+      "unit": "ratio",
+      "value": 1.0
+    },
+    "failed_calls": {
+      "availability": "available",
+      "direction": "uac_to_uas",
+      "source": "sipp_csv",
+      "unit": "count",
+      "value": 0
+    },
+    "hangup_causes": {
+      "availability": "available",
+      "direction": "pbx_channel",
+      "source": "asterisk_ami_cel",
+      "unit": "count_by_cause",
+      "value": {
+        "16": 8
+      }
+    },
+    "pbx_call_ids_correlated": {
+      "availability": "available",
+      "direction": "pbx_channel",
+      "source": "asterisk_ami",
+      "unit": "count",
+      "value": 8
+    },
+    "pbx_dtmf_confirmed": {
+      "availability": "available",
+      "direction": "pbx_channel",
+      "source": "asterisk_ami",
+      "unit": "count",
+      "value": 0
+    },
+    "pbx_transfer_confirmed": {
+      "availability": "available",
+      "direction": "pbx_channel",
+      "source": "asterisk_ami",
+      "unit": "count",
+      "value": 0
+    },
+    "qdisc_drops": {
+      "availability": "available",
+      "direction": "netem_links",
+      "source": "tc_s_qdisc",
+      "unit": "count",
+      "value": 0
+    },
+    "qdisc_overlimits": {
+      "availability": "available",
+      "direction": "netem_links",
+      "source": "tc_s_qdisc",
+      "unit": "count",
+      "value": 0
+    },
+    "rtp_packet_loss_pbx_to_uac": {
+      "availability": "available",
+      "direction": "pbx_to_uac",
+      "source": "tshark_pcap_rtp",
+      "unit": "pct",
+      "value": 0.0
+    },
+    "rtp_packet_loss_uac_to_pbx": {
+      "availability": "available",
+      "direction": "uac_to_pbx",
+      "source": "tshark_pcap_rtp",
+      "unit": "pct",
+      "value": 0.0
+    },
+    "rtp_receiver_jitter_pbx_to_uac": {
+      "availability": "available",
+      "direction": "pbx_to_uac",
+      "source": "tshark_pcap_rtp",
+      "unit": "ms",
+      "value": 8.935847407760217
+    },
+    "rtp_receiver_jitter_uac_to_pbx": {
+      "availability": "available",
+      "direction": "uac_to_pbx",
+      "source": "tshark_pcap_rtp",
+      "unit": "ms",
+      "value": 8.893564095676048
+    },
+    "rtt_ms": {
+      "availability": "available",
+      "direction": "round_trip",
+      "source": "tshark_echo_p50_unique_payload",
+      "unit": "ms",
+      "value": 0.1499652862548828
+    },
+    "scenario_success_rate": {
+      "availability": "available",
+      "direction": "uac_to_uas",
+      "source": "sipp_csv",
+      "unit": "ratio",
+      "value": 1.0
+    },
+    "sip_codes_pbx_to_uac": {
+      "availability": "available",
+      "direction": "pbx_to_uac",
+      "source": "tshark_sip",
+      "unit": "count_by_code",
+      "value": {
+        "100": 8,
+        "200": 16
+      }
+    },
+    "sip_codes_uac_to_pbx": {
+      "availability": "available",
+      "direction": "uac_to_pbx",
+      "source": "tshark_sip",
+      "unit": "count_by_code",
+      "value": {}
+    },
+    "sip_retransmits": {
+      "availability": "available",
+      "direction": "tx_rx",
+      "source": "sipp_csv",
+      "unit": "count",
+      "value": 0
+    },
+    "sip_timeouts": {
+      "availability": "available",
+      "direction": "rx",
+      "source": "sipp_csv",
+      "unit": "count",
+      "value": 0
+    },
+    "sipp_cpu_pct_peak": {
+      "availability": "available",
+      "direction": "sipp",
+      "source": "procfs",
+      "unit": "pct_one_logical_cpu",
+      "value": 4.858008500126696
+    },
+    "sipp_rss_mib_peak": {
+      "availability": "available",
+      "direction": "sipp",
+      "source": "procfs",
+      "unit": "MiB",
+      "value": 13.421875
+    },
+    "successful_calls": {
+      "availability": "available",
+      "direction": "uac_to_uas",
+      "source": "sipp_csv",
+      "unit": "count",
+      "value": 8
+    }
+  },
+  "sipp_exit_code": 0,
+  "stage": "loss",
+  "status": "SUCCEEDED"
+}

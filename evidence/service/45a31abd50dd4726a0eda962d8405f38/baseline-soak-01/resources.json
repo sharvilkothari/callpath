@@ -1,0 +1,36 @@
+[
+  {
+    "asterisk": {
+      "cpu_pct": null,
+      "pid": 69,
+      "rss_mib": 200.1640625
+    },
+    "monotonic_s": 1788.23537523
+  },
+  {
+    "asterisk": {
+      "cpu_pct": 4.774073921797855,
+      "pid": 69,
+      "rss_mib": 200.1640625
+    },
+    "monotonic_s": 1788.444839938,
+    "sipp": {
+      "cpu_pct": null,
+      "pid": 151,
+      "rss_mib": 11.28125
+    }
+  },
+  {
+    "asterisk": {
+      "cpu_pct": 0.0,
+      "pid": 69,
+      "rss_mib": 200.1640625
+    },
+    "monotonic_s": 1788.652307063,
+    "sipp": {
+      "cpu_pct": 0.0,
+      "pid": 151,
+      "rss_mib": 11.28125
+    }
+  }
+]

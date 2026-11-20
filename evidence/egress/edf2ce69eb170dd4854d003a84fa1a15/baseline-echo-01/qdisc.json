@@ -1,0 +1,138 @@
+{
+  "pbx/cp-veth-pbx": [
+    {
+      "backlog": 0,
+      "bytes": 113231,
+      "drops": 0,
+      "handle": "1:",
+      "kind": "prio",
+      "options": {
+        "bands": 2,
+        "multiqueue": false,
+        "priomap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "overlimits": 0,
+      "packets": 514,
+      "qlen": 0,
+      "refcnt": 9,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 105288,
+      "drops": 0,
+      "handle": "10:",
+      "kind": "netem",
+      "options": {
+        "ecn": false,
+        "gap": 0,
+        "limit": 1000,
+        "seed": 2798018472926290453
+      },
+      "overlimits": 0,
+      "packets": 492,
+      "parent": "1:2",
+      "qlen": 0,
+      "requeues": 0
+    },
+    {
+      "backlog": 0,
+      "bytes": 113231,
+      "drops": 0,
+      "handle": "ffff:",
+      "kind": "clsact",
+      "options": {},
+      "overlimits": 0,
+      "packets": 514,
+      "parent": "ffff:fff1",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ],
+  "sipp/cp-veth-sipp": [
+    {
+      "backlog": 0,
+      "bytes": 112481,
+      "drops": 0,
+      "handle": "1:",
+      "kind": "prio",
+      "options": {
+        "bands": 2,
+        "multiqueue": false,
+        "priomap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "overlimits": 0,
+      "packets": 514,
+      "qlen": 0,
+      "refcnt": 9,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 105288,
+      "drops": 0,
+      "handle": "10:",
+      "kind": "netem",
+      "options": {
+        "ecn": false,
+        "gap": 0,
+        "limit": 1000,
+        "seed": 18244696194307998138
+      },
+      "overlimits": 0,
+      "packets": 492,
+      "parent": "1:2",
+      "qlen": 0,
+      "requeues": 0
+    },
+    {
+      "backlog": 0,
+      "bytes": 112571,
+      "drops": 0,
+      "handle": "ffff:",
+      "kind": "clsact",
+      "options": {},
+      "overlimits": 0,
+      "packets": 515,
+      "parent": "ffff:fff1",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ]
+}

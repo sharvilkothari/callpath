@@ -1,0 +1,45 @@
+services:
+  db:
+    image: callpath-db:dev
+    build:
+      context: .
+      dockerfile: service/db.Dockerfile
+    environment:
+      POSTGRES_DB: callpath
+      POSTGRES_USER: callpath
+      POSTGRES_PASSWORD: ${CALLPATH_DB_PASSWORD:?set CALLPATH_DB_PASSWORD}
+    ports:
+      - "127.0.0.1:${CALLPATH_DB_PORT:-55432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U callpath -d callpath"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+  api:
+    image: callpath-api:dev
+    build:
+      context: .
+      dockerfile: service/Dockerfile
+    environment:
+      CALLPATH_DB_URL: postgresql://callpath:${CALLPATH_DB_PASSWORD}@db:5432/callpath
+      CALLPATH_API_TOKEN: ${CALLPATH_API_TOKEN:?set CALLPATH_API_TOKEN}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${CALLPATH_API_PORT:-8042}:8000"
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+  web:
+    image: callpath-web:dev
+    build:
+      context: ./web
+    depends_on: [api]
+    ports:
+      - "127.0.0.1:${CALLPATH_WEB_PORT:-3042}:3000"
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+volumes:
+  pgdata:

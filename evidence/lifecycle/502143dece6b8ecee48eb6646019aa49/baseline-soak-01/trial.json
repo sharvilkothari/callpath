@@ -1,0 +1,25 @@
+{
+  "id": "f41b1c2a84194b8297a22f4c335e64f7",
+  "load": {
+    "calls": 5,
+    "concurrency": 5,
+    "cps": 2,
+    "hold_ms": 8000,
+    "timeout_s": 2
+  },
+  "profile": {
+    "burst_end_pct": 25,
+    "burst_start_pct": 0,
+    "delay_ms": 0,
+    "duplicate_pct": 0,
+    "jitter_ms": 0,
+    "loss_pct": 0,
+    "path": "forward",
+    "placement": "egress",
+    "queue_limit": 1000,
+    "reorder_pct": 0,
+    "seed": 42,
+    "traffic": "all"
+  },
+  "stage": "soak"
+}

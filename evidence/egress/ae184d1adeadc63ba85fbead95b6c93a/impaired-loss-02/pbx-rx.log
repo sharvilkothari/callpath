@@ -1,0 +1,4 @@
+tcpdump: listening on cp-veth-pbx, link-type EN10MB (Ethernet), snapshot length 1024 bytes
+570 packets captured
+570 packets received by filter
+0 packets dropped by kernel

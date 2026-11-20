@@ -1,0 +1,148 @@
+{
+  "pbx/cp-veth-pbx": [
+    {
+      "backlog": 0,
+      "bytes": 113415,
+      "drops": 0,
+      "handle": "1:",
+      "kind": "prio",
+      "options": {
+        "bands": 2,
+        "multiqueue": false,
+        "priomap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "overlimits": 0,
+      "packets": 513,
+      "qlen": 0,
+      "refcnt": 9,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 103576,
+      "drops": 0,
+      "handle": "10:",
+      "kind": "netem",
+      "options": {
+        "delay": {
+          "correlation": 0,
+          "delay": 0.04,
+          "jitter": 0.01
+        },
+        "ecn": false,
+        "gap": 0,
+        "limit": 1000,
+        "seed": 42
+      },
+      "overlimits": 0,
+      "packets": 484,
+      "parent": "1:2",
+      "qlen": 0,
+      "requeues": 0
+    },
+    {
+      "backlog": 0,
+      "bytes": 113415,
+      "drops": 0,
+      "handle": "ffff:",
+      "kind": "clsact",
+      "options": {},
+      "overlimits": 0,
+      "packets": 513,
+      "parent": "ffff:fff1",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ],
+  "sipp/cp-veth-sipp": [
+    {
+      "backlog": 0,
+      "bytes": 114805,
+      "drops": 0,
+      "handle": "1:",
+      "kind": "prio",
+      "options": {
+        "bands": 2,
+        "multiqueue": false,
+        "priomap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "overlimits": 0,
+      "packets": 523,
+      "qlen": 0,
+      "refcnt": 9,
+      "requeues": 0,
+      "root": true
+    },
+    {
+      "backlog": 0,
+      "bytes": 105716,
+      "drops": 0,
+      "handle": "10:",
+      "kind": "netem",
+      "options": {
+        "delay": {
+          "correlation": 0,
+          "delay": 0.04,
+          "jitter": 0.01
+        },
+        "ecn": false,
+        "gap": 0,
+        "limit": 1000,
+        "seed": 42
+      },
+      "overlimits": 0,
+      "packets": 494,
+      "parent": "1:2",
+      "qlen": 0,
+      "requeues": 0
+    },
+    {
+      "backlog": 0,
+      "bytes": 114895,
+      "drops": 0,
+      "handle": "ffff:",
+      "kind": "clsact",
+      "options": {},
+      "overlimits": 0,
+      "packets": 524,
+      "parent": "ffff:fff1",
+      "qlen": 0,
+      "requeues": 0
+    }
+  ]
+}

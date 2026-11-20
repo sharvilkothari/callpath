@@ -1,0 +1,75 @@
+[
+  {
+    "call_id": "1-151@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "Newchannel",
+    "linkedid": "1794857985.0",
+    "observed_at": 1794857985.061294,
+    "uniqueid": "1794857985.0"
+  },
+  {
+    "call_id": "1-151@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "CEL",
+    "eventname": "CHAN_START",
+    "eventtime": "2026-11-16 19:39:45",
+    "extra": "",
+    "linkedid": "1794857985.0",
+    "observed_at": 1794857985.061722,
+    "uniqueid": "1794857985.0"
+  },
+  {
+    "call_id": "1-151@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "UserEvent",
+    "linkedid": "1794857985.0",
+    "observed_at": 1794857985.0621336,
+    "runid": "71aefb8ff08f4cffb27fabbdca4fde75",
+    "sipcallid": "1-151@10.200.1.2",
+    "uniqueid": "1794857985.0",
+    "userevent": "CallPathCorrelation"
+  },
+  {
+    "call_id": "1-151@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "CEL",
+    "eventname": "ANSWER",
+    "eventtime": "2026-11-16 19:39:45",
+    "extra": "",
+    "linkedid": "1794857985.0",
+    "observed_at": 1794857985.0623806,
+    "uniqueid": "1794857985.0"
+  },
+  {
+    "call_id": "1-151@10.200.1.2",
+    "cause": "16",
+    "cause-txt": "Normal Clearing",
+    "channel": "PJSIP/generator-00000000",
+    "event": "Hangup",
+    "linkedid": "1794857985.0",
+    "observed_at": 1794857986.0717318,
+    "uniqueid": "1794857985.0"
+  },
+  {
+    "call_id": "1-151@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "CEL",
+    "eventname": "HANGUP",
+    "eventtime": "2026-11-16 19:39:46",
+    "extra": "{\"hangupcause\":16,\"hangupsource\":\"PJSIP/generator-00000000\",\"dialstatus\":\"\"}",
+    "linkedid": "1794857985.0",
+    "observed_at": 1794857986.07204,
+    "uniqueid": "1794857985.0"
+  },
+  {
+    "call_id": "1-151@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "CEL",
+    "eventname": "CHAN_END",
+    "eventtime": "2026-11-16 19:39:46",
+    "extra": "",
+    "linkedid": "1794857985.0",
+    "observed_at": 1794857986.0722172,
+    "uniqueid": "1794857985.0"
+  }
+]

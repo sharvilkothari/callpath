@@ -1,0 +1,303 @@
+{
+  "aggregates": {
+    "baseline": {
+      "soak": {}
+    }
+  },
+  "checks": [
+    {
+      "check": "baseline/soak minimum scenario success",
+      "observed": null,
+      "operator": ">=",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "threshold": 0.99
+    },
+    {
+      "check": "baseline/soak remaining PBX channels",
+      "observed": null,
+      "operator": "<=",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "threshold": 0
+    }
+  ],
+  "cleanup": {
+    "errors": [],
+    "remaining": [],
+    "verified": true
+  },
+  "comparison": {},
+  "notes": [
+    "Experiments describe the isolated local Asterisk lab. Carrier, production and conversational quality conclusions require separate evidence.",
+    "The seeded netem sequence depends on packet order and the host schedule.",
+    "Qdisc drops may include both configured impairment and queue saturation.",
+    "Setup timings are SIP INVITE to first successful response. Echo RTT requires uniquely matched round-trip payloads.",
+    "RTP loss uses sender-to-receiver identity matching. Jitter is the median of final RFC 3550 estimates across streams.",
+    "CPU utilization is process-based, in units of one logical CPU.",
+    "Fewer than five planned repeats per condition; treat observed spread as preliminary."
+  ],
+  "run_id": "53e8fca165711c9aaafbad20c962117b",
+  "snapshot_sha256": "077d80a2bdff37f263af5892cc0d6be55acaa9a291a8ea19e0d53dd394b5d8af",
+  "status": "CANCELLED",
+  "trials": [
+    {
+      "cleanup": {
+        "errors": [],
+        "remaining": [],
+        "verified": true
+      },
+      "condition": "baseline",
+      "directory": "baseline-soak-01",
+      "id": "55db5950083c428bb2925621da632d3d",
+      "iteration": 1,
+      "metrics": {
+        "asterisk_channels_remaining": {
+          "availability": "unavailable",
+          "direction": "pbx_channel",
+          "reason": "No valid samples collected",
+          "source": "asterisk_cli",
+          "unit": "count",
+          "value": null
+        },
+        "asterisk_cpu_pct_peak": {
+          "availability": "unavailable",
+          "direction": "asterisk",
+          "reason": "No valid samples collected",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": null
+        },
+        "asterisk_rss_mib_peak": {
+          "availability": "unavailable",
+          "direction": "asterisk",
+          "reason": "No valid samples collected",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": null
+        },
+        "call_attempts": {
+          "availability": "unavailable",
+          "direction": "uac_to_uas",
+          "reason": "No valid samples collected",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": null
+        },
+        "call_setup_latency_max_ms": {
+          "availability": "unavailable",
+          "direction": "uac_to_uas",
+          "reason": "No valid samples collected",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": null
+        },
+        "call_setup_latency_p50_ms": {
+          "availability": "unavailable",
+          "direction": "uac_to_uas",
+          "reason": "No valid samples collected",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": null
+        },
+        "call_setup_latency_p95_ms": {
+          "availability": "unavailable",
+          "direction": "uac_to_uas",
+          "reason": "No valid samples collected",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": null
+        },
+        "concurrent_calls_peak": {
+          "availability": "unavailable",
+          "direction": "lab_call",
+          "reason": "No valid samples collected",
+          "source": "sipp_csv_sampled",
+          "unit": "count",
+          "value": null
+        },
+        "cps_achieved": {
+          "availability": "unavailable",
+          "direction": "uac_to_uas",
+          "reason": "No valid samples collected",
+          "source": "sipp_csv",
+          "unit": "calls_per_sec",
+          "value": null
+        },
+        "cps_configured": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "run_snapshot",
+          "unit": "calls_per_sec",
+          "value": 2
+        },
+        "echo_unique_payload_match_rate": {
+          "availability": "unavailable",
+          "direction": "round_trip",
+          "reason": "No valid samples collected",
+          "source": "tshark_echo",
+          "unit": "ratio",
+          "value": null
+        },
+        "failed_calls": {
+          "availability": "unavailable",
+          "direction": "uac_to_uas",
+          "reason": "No valid samples collected",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": null
+        },
+        "hangup_causes": {
+          "availability": "unavailable",
+          "direction": "pbx_channel",
+          "reason": "No valid samples collected",
+          "source": "asterisk_ami_cel",
+          "unit": "count_by_cause",
+          "value": null
+        },
+        "pbx_call_ids_correlated": {
+          "availability": "unavailable",
+          "direction": "pbx_channel",
+          "reason": "No valid samples collected",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": null
+        },
+        "pbx_dtmf_confirmed": {
+          "availability": "unavailable",
+          "direction": "pbx_channel",
+          "reason": "No valid samples collected",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": null
+        },
+        "pbx_transfer_confirmed": {
+          "availability": "unavailable",
+          "direction": "pbx_channel",
+          "reason": "No valid samples collected",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": null
+        },
+        "qdisc_drops": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 0
+        },
+        "qdisc_overlimits": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 0
+        },
+        "rtp_packet_loss_pbx_to_uac": {
+          "availability": "unavailable",
+          "direction": "pbx_to_uac",
+          "reason": "Capture missing, incomplete, or reported kernel drops",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": null
+        },
+        "rtp_packet_loss_uac_to_pbx": {
+          "availability": "unavailable",
+          "direction": "uac_to_pbx",
+          "reason": "Capture missing, incomplete, or reported kernel drops",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": null
+        },
+        "rtp_receiver_jitter_pbx_to_uac": {
+          "availability": "unavailable",
+          "direction": "pbx_to_uac",
+          "reason": "Capture missing, incomplete, or reported kernel drops",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": null
+        },
+        "rtp_receiver_jitter_uac_to_pbx": {
+          "availability": "unavailable",
+          "direction": "uac_to_pbx",
+          "reason": "Capture missing, incomplete, or reported kernel drops",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": null
+        },
+        "rtt_ms": {
+          "availability": "unavailable",
+          "direction": "round_trip",
+          "reason": "No uniquely matched PCMU echo packets",
+          "source": "tshark_echo_p50_unique_payload",
+          "unit": "ms",
+          "value": null
+        },
+        "scenario_success_rate": {
+          "availability": "unavailable",
+          "direction": "uac_to_uas",
+          "reason": "No valid samples collected",
+          "source": "sipp_csv",
+          "unit": "ratio",
+          "value": null
+        },
+        "sip_codes_pbx_to_uac": {
+          "availability": "unavailable",
+          "direction": "pbx_to_uac",
+          "reason": "Capture missing, incomplete, or reported kernel drops",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": null
+        },
+        "sip_codes_uac_to_pbx": {
+          "availability": "unavailable",
+          "direction": "uac_to_pbx",
+          "reason": "Capture missing, incomplete, or reported kernel drops",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": null
+        },
+        "sip_retransmits": {
+          "availability": "unavailable",
+          "direction": "tx_rx",
+          "reason": "No valid samples collected",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": null
+        },
+        "sip_timeouts": {
+          "availability": "unavailable",
+          "direction": "rx",
+          "reason": "No valid samples collected",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": null
+        },
+        "sipp_cpu_pct_peak": {
+          "availability": "unavailable",
+          "direction": "sipp",
+          "reason": "No valid samples collected",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": null
+        },
+        "sipp_rss_mib_peak": {
+          "availability": "unavailable",
+          "direction": "sipp",
+          "reason": "No valid samples collected",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": null
+        },
+        "successful_calls": {
+          "availability": "unavailable",
+          "direction": "uac_to_uas",
+          "reason": "No valid samples collected",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": null
+        }
+      },
+      "stage": "soak",
+      "status": "CANCELLED"
+    }
+  ]
+}

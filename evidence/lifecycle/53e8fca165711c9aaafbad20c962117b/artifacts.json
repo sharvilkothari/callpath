@@ -1,0 +1,74 @@
+[
+  {
+    "path": "baseline-soak-01/asterisk-stderr.log",
+    "sha256": "b1a2f746d22f5b236ded1530fa40af001c967c4ea6682ed7ea51fd4e9619b59a",
+    "size_bytes": 68,
+    "type": "log"
+  },
+  {
+    "path": "baseline-soak-01/asterisk.log",
+    "sha256": "ae510379b16c627207e58864dfd82f4c71c1056805036513486c524f91939f03",
+    "size_bytes": 16216,
+    "type": "log"
+  },
+  {
+    "path": "baseline-soak-01/channels.log",
+    "sha256": "245adb8e02576fc4407ec5dad980f44d57734e311484e1b05d652939908602ab",
+    "size_bytes": 102,
+    "type": "log"
+  },
+  {
+    "path": "baseline-soak-01/events.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "size_bytes": 3,
+    "type": "record"
+  },
+  {
+    "path": "baseline-soak-01/qdisc.json",
+    "sha256": "cba21df7c68421481d38274ff3eb9420936d1d81a0c16d0ca5016814cbed6f8f",
+    "size_bytes": 1174,
+    "type": "record"
+  },
+  {
+    "path": "baseline-soak-01/result.json",
+    "sha256": "ba20eade4379639e9dff75d119e102606efcb43c923971614c357a1c8e2ed3f7",
+    "size_bytes": 7327,
+    "type": "record"
+  },
+  {
+    "path": "baseline-soak-01/rtp.json",
+    "sha256": "e17ca135aa7c325250ecae95c438dda2543061153b874bbbcb603e3ca95b87b1",
+    "size_bytes": 372,
+    "type": "record"
+  },
+  {
+    "path": "baseline-soak-01/sockets.log",
+    "sha256": "a4935d058da4a24a8108df7c18ad2479ee0ba335280b9728431d18c41575cf0e",
+    "size_bytes": 24,
+    "type": "log"
+  },
+  {
+    "path": "baseline-soak-01/trial.json",
+    "sha256": "273bd6936263e13ee885791b21dd274f484ede3304ef826675e9c652f66a14c5",
+    "size_bytes": 465,
+    "type": "record"
+  },
+  {
+    "path": "report.json",
+    "sha256": "cb8b2b84ee909ee305eb7529564fb5ff59ca65169c659e92b9722aeae45d8243",
+    "size_bytes": 9826,
+    "type": "record"
+  },
+  {
+    "path": "report.md",
+    "sha256": "4772e84604755c6e74bc29e77e81cf2e3a5ba0ef6ab4d98877e421ad46a7f788",
+    "size_bytes": 1813,
+    "type": "report"
+  },
+  {
+    "path": "snapshot.json",
+    "sha256": "077d80a2bdff37f263af5892cc0d6be55acaa9a291a8ea19e0d53dd394b5d8af",
+    "size_bytes": 3853,
+    "type": "record"
+  }
+]

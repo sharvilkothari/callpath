@@ -1,0 +1,3 @@
+CurrentTime;ElapsedTime;0_INVITE_Sent;0_INVITE_Retrans;0_INVITE_Timeout;1_100_Recv;1_100_Retrans;1_100_Timeout;1_100_Unexp;2_180_Recv;2_180_Retrans;2_180_Timeout;2_180_Unexp;3_183_Recv;3_183_Retrans;3_183_Timeout;3_183_Unexp;4_200_Recv;4_200_Retrans;4_200_Timeout;4_200_Unexp;5_ACK_Sent;5_ACK_Retrans;6_Pause_Sessions;6_Pause_Unexp;7_Pause_Sessions;7_Pause_Unexp;8_BYE_Sent;8_BYE_Retrans;8_BYE_Timeout;9_200_Recv;9_200_Retrans;9_200_Timeout;9_200_Unexp;
+2026-11-16	19:41:40.282736	1794858100.282736;00:00:00:001000;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;
+2026-11-16	19:41:40.811513	1794858100.811513;00:00:00:530000;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;0;

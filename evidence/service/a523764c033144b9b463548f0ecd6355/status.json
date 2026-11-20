@@ -1,0 +1,9 @@
+{
+  "container": "callpath-a523764c033144b9b463548f0ecd6355",
+  "created_at": "2026-11-16T19:45:17.878849+00:00",
+  "engine_id": "31e1e2d9-dc62-4b85-a16e-0c0c79010622",
+  "error": "Interrupted controller; its lab teardown was verified",
+  "run_id": "a523764c033144b9b463548f0ecd6355",
+  "status": "CANCELLED",
+  "updated_at": "2026-11-16T19:45:50.693922+00:00"
+}

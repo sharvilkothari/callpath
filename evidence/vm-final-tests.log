@@ -1,0 +1,31 @@
+{
+  "cleanup": {
+    "errors": [],
+    "remaining": [],
+    "verified": true
+  },
+  "error": null,
+  "ok": true,
+  "tools": {
+    "asterisk": "Asterisk 22.5.2~dfsg+~cs6.15.60671435-1",
+    "ip": "ip utility, iproute2-6.19.0, libbpf 1.6.3",
+    "kernel": "6.8.0-147-generic",
+    "python": "3.14.4",
+    "sipp": "SIPp v3.7.7-TLS-SCTP-PCAP-SHA256.",
+    "tc": "tc utility, iproute2-6.19.0, libbpf 1.6.3",
+    "tcpdump": "tcpdump version 4.99.6",
+    "tshark": "TShark (Wireshark) 4.6.4."
+  }
+}
+Run 5ab2924c5630edf354fbef54c92e36b8
+baseline-loss-01
+baseline-loss-02
+baseline-loss-03
+baseline-loss-04
+baseline-loss-05
+impaired-loss-01
+impaired-loss-02
+impaired-loss-03
+impaired-loss-04
+impaired-loss-05
+SUCCEEDED /results/5ab2924c5630edf354fbef54c92e36b8

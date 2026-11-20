@@ -1,0 +1,13 @@
+{"ready": true}
+{"event": "Newchannel", "channel": "PJSIP/generator-00000000", "uniqueid": "1794858083.0", "linkedid": "1794858083.0", "observed_at": 1794858083.276084}
+{"event": "CEL", "eventname": "CHAN_START", "channel": "PJSIP/generator-00000000", "eventtime": "2026-11-16 19:41:23", "uniqueid": "1794858083.0", "linkedid": "1794858083.0", "extra": "", "observed_at": 1794858083.2765634}
+{"event": "UserEvent", "channel": "PJSIP/generator-00000000", "uniqueid": "1794858083.0", "linkedid": "1794858083.0", "userevent": "CallPathCorrelation", "runid": "f41b1c2a84194b8297a22f4c335e64f7", "sipcallid": "1-151@10.200.1.2", "observed_at": 1794858083.2813663}
+{"event": "CEL", "eventname": "ANSWER", "channel": "PJSIP/generator-00000000", "eventtime": "2026-11-16 19:41:23", "uniqueid": "1794858083.0", "linkedid": "1794858083.0", "extra": "", "observed_at": 1794858083.281781}
+{"event": "Newchannel", "channel": "PJSIP/generator-00000001", "uniqueid": "1794858083.3", "linkedid": "1794858083.3", "observed_at": 1794858083.7702541}
+{"event": "CEL", "eventname": "CHAN_START", "channel": "PJSIP/generator-00000001", "eventtime": "2026-11-16 19:41:23", "uniqueid": "1794858083.3", "linkedid": "1794858083.3", "extra": "", "observed_at": 1794858083.770618}
+{"event": "UserEvent", "channel": "PJSIP/generator-00000001", "uniqueid": "1794858083.3", "linkedid": "1794858083.3", "userevent": "CallPathCorrelation", "runid": "f41b1c2a84194b8297a22f4c335e64f7", "sipcallid": "2-151@10.200.1.2", "observed_at": 1794858083.7755501}
+{"event": "CEL", "eventname": "ANSWER", "channel": "PJSIP/generator-00000001", "eventtime": "2026-11-16 19:41:23", "uniqueid": "1794858083.3", "linkedid": "1794858083.3", "extra": "", "observed_at": 1794858083.7760324}
+{"event": "Newchannel", "channel": "PJSIP/generator-00000002", "uniqueid": "1794858084.6", "linkedid": "1794858084.6", "observed_at": 1794858084.277552}
+{"event": "CEL", "eventname": "CHAN_START", "channel": "PJSIP/generator-00000002", "eventtime": "2026-11-16 19:41:24", "uniqueid": "1794858084.6", "linkedid": "1794858084.6", "extra": "", "observed_at": 1794858084.278299}
+{"event": "UserEvent", "channel": "PJSIP/generator-00000002", "uniqueid": "1794858084.6", "linkedid": "1794858084.6", "userevent": "CallPathCorrelation", "runid": "f41b1c2a84194b8297a22f4c335e64f7", "sipcallid": "3-151@10.200.1.2", "observed_at": 1794858084.278898}
+{"event": "CEL", "eventname": "ANSWER", "channel": "PJSIP/generator-00000002", "eventtime": "2026-11-16 19:41:24", "uniqueid": "1794858084.6", "linkedid": "1794858084.6", "extra": "", "observed_at": 1794858084.2794602}

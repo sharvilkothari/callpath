@@ -1,0 +1,148 @@
+Asterisk 22.5.2~dfsg+~cs6.15.60671435-1, Copyright (C) 1999 - 2025, Sangoma Technologies Corporation and others.
+Created by Mark Spencer <markster@digium.com>
+Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.
+This is free software, with components licensed under the GNU General Public
+License version 2 and other licenses; you are welcome to redistribute it under
+certain conditions. Type 'core show license' for details.
+=========================================================================
+PBX UUID: 1187e8cb-f22c-4298-ab14-2252f30024fe
+Unable to load config file 'stasis.conf'
+Could not load Stasis configuration; using defaults
+ Asterisk PBX Core Initializing
+ Asterisk Dynamic Loader Starting:
+[Nov 16 19:50:17] NOTICE[69]: loader.c:2568 load_modules: 354 modules will be loaded.
+[Nov 16 19:50:17] WARNING[69]: res_odbc.c:577 load_odbc_config: Unable to load config file res_odbc.conf
+[Nov 16 19:50:17] ERROR[69]: res_config_sqlite3.c:1275 parse_config: Missing config file 'res_config_sqlite3.conf'
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'statsd.conf'
+[Nov 16 19:50:17] NOTICE[69]: res_statsd.c:399 load_module: Could not load statsd config; using defaults
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'udptl.conf'
+[Nov 16 19:50:17] NOTICE[69]: udptl.c:1363 __ast_udptl_reload: Could not load udptl config; using defaults
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'acl.conf'
+[Nov 16 19:50:17] WARNING[69]: indications.c:1071 load_indications: Can't find indications config file indications.conf.
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'features.conf'
+[Nov 16 19:50:17] NOTICE[69]: features_config.c:1946 load_config: Could not load features config; using defaults
+[Nov 16 19:50:17] NOTICE[69]: cdr.c:4643 cdr_toggle_runtime_options: CDR logging disabled.
+[Nov 16 19:50:17] WARNING[69]: ccss.c:4357 initialize_cc_max_requests: Could not find valid ccss.conf file. Using cc_max_requests default
+[Nov 16 19:50:17] WARNING[69]: ccss.c:4414 initialize_cc_devstate_map: Could not find valid ccss.conf file. Using cc_[state]_devstate defaults
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'geolocation.conf'
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'geolocation.conf'
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'pjproject.conf'
+[Nov 16 19:50:17] ERROR[69]: res_pjsip_config_wizard.c:1074 object_type_loaded_observer: Unable to load config file 'pjsip_wizard.conf'
+[Nov 16 19:50:17] ERROR[69]: res_pjsip_config_wizard.c:1074 object_type_loaded_observer: Unable to load config file 'pjsip_wizard.conf'
+[Nov 16 19:50:17] ERROR[69]: res_pjsip_config_wizard.c:1074 object_type_loaded_observer: Unable to load config file 'pjsip_wizard.conf'
+ Starting unbound resolver using default configuration
+[Nov 16 19:50:17] ERROR[69]: res_pjsip_config_wizard.c:1074 object_type_loaded_observer: Unable to load config file 'pjsip_wizard.conf'
+[Nov 16 19:50:17] NOTICE[69]: res_stir_shaken/crypto_utils.c:102 crypto_register_x509_extension: Registered object TNAuthList as NID 1487
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'stir_shaken.conf'
+[Nov 16 19:50:17] WARNING[69]: res_stir_shaken/verification_config.c:474 vs_config_load: Stir/Shaken verification service disabled.  Either there were errors in the 'verification' object in stir_shaken.conf or it was missing altogether.
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'stir_shaken.conf'
+[Nov 16 19:50:17] WARNING[69]: res_stir_shaken/attestation_config.c:328 as_config_load: Stir/Shaken attestation service disabled.  Either there were errors in the 'attestation' object in stir_shaken.conf or it was missing altogether.
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'stir_shaken.conf'
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'stir_shaken.conf'
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'xmpp.conf'
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'aeap.conf'
+[Nov 16 19:50:17] NOTICE[69]: res_smdi.c:981 smdi_load: Unable to load config smdi.conf: SMDI disabled
+[Nov 16 19:50:17] NOTICE[69]: res_smdi.c:1430 load_module: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'websocket_client.conf'
+[Nov 16 19:50:17] WARNING[69]: res_musiconhold.c:2269 load_module: No music on hold classes configured, disabling music on hold.
+[Nov 16 19:50:17] ERROR[69]: file.c:1172 __ast_file_read_dirs: Error opening directory - /run/callpath-work/keys: No such file or directory
+[Nov 16 19:50:17] WARNING[69]: res_crypto.c:832 crypto_load: Unable to open key directory '/run/callpath-work/keys'
+[Nov 16 19:50:17] NOTICE[69]: chan_console.c:1445 load_config: Unable to open configuration file console.conf!
+[Nov 16 19:50:17] NOTICE[69]: res_fax.c:4473 set_config: Configuration file 'res_fax.conf' not found, using default options.
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'pjsip_notify.conf'
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'ari.conf'
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'ari.conf'
+[Nov 16 19:50:17] ERROR[69]: res_sorcery_config.c:328 sorcery_config_internal_load: Unable to load config file 'ari.conf'
+[Nov 16 19:50:17] ERROR[69]: res_pjsip_config_wizard.c:1074 object_type_loaded_observer: Unable to load config file 'pjsip_wizard.conf'
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'res_parking.conf'
+[Nov 16 19:50:17] ERROR[69]: res_calendar.c:1094 load_config: Unable to load config calendar.conf
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'agents.conf'
+[Nov 16 19:50:17] ERROR[69]: app_agent_pool.c:2719 load_module: Unable to load config. Not loading module.
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'confbridge.conf'
+[Nov 16 19:50:17] ERROR[69]: app_confbridge.c:4672 load_module: Unable to load config. Not loading module.
+[Nov 16 19:50:17] NOTICE[69]: cel_tds.c:438 tds_load_module: Unable to load TDS config for CELs: cel_tds.conf
+[Nov 16 19:50:17] WARNING[69]: cel_tds.c:552 load_module: cel_tds module had config problems; declining load
+[Nov 16 19:50:17] NOTICE[69]: cdr_tds.c:486 tds_load_module: Unable to load TDS config for CDRs: cdr_tds.conf
+[Nov 16 19:50:17] ERROR[69]: cel_custom.c:86 load_config: Unable to load cel_custom.conf. Not logging CEL to custom CSVs.
+[Nov 16 19:50:17] WARNING[69]: cel_pgsql.c:671 my_load_module: Unable to load config for PostgreSQL CEL's: cel_pgsql.conf
+[Nov 16 19:50:17] WARNING[69]: cdr_sqlite3_custom.c:161 load_config: Failed to load configuration file. Module not activated.
+[Nov 16 19:50:17] WARNING[69]: cdr_manager.c:215 load_config: Failed to load configuration file. Module not activated.
+[Nov 16 19:50:17] ERROR[69]: cdr_custom.c:98 load_config: Unable to load cdr_custom.conf. Not logging custom CSV CDRs.
+[Nov 16 19:50:17] NOTICE[69]: cdr_radius.c:264 load_module: Cannot load radiusclient-ng configuration file /etc/radiusclient-ng/radiusclient.conf.
+[Nov 16 19:50:17] WARNING[69]: cel_sqlite3_custom.c:161 load_config: Failed to load configuration file. Module not activated.
+[Nov 16 19:50:17] WARNING[69]: cdr_pgsql.c:530 config_module: Unable to load config for PostgreSQL CDR's: cdr_pgsql.conf
+[Nov 16 19:50:17] NOTICE[69]: cel_radius.c:234 load_module: Cannot load radiusclient-ng configuration file /etc/radiusclient-ng/radiusclient.conf.
+[Nov 16 19:50:17] ERROR[69]: pbx_lua.c:1660 load_or_reload_lua_stuff: Error loading extensions.lua: cannot open '/opt/callpath/asterisk/extensions.lua' for reading: No such file or directory
+[Nov 16 19:50:17] ERROR[69]: res_clialiases.c:196 load_config: res_clialiases configuration file 'cli_aliases.conf' not found
+[Nov 16 19:50:17] ERROR[69]: chan_unistim.c:6861 reload_config: Unable to load config unistim.conf
+[Nov 16 19:50:17] WARNING[69]: app_minivm.c:2786 load_config: Failed to load configuration file. Module activated with default settings.
+[Nov 16 19:50:17] NOTICE[69]: pbx_ael.c:164 pbx_load_module: File /opt/callpath/asterisk/extensions.ael not found; AEL declining load
+[Nov 16 19:50:17] WARNING[69]: app_followme.c:423 reload_followme: No follow me config file (followme.conf), so no follow me
+[Nov 16 19:50:17] WARNING[69]: res_snmp.c:64 load_config: Could not load res_snmp.conf
+[Nov 16 19:50:17] ERROR[69]: app_amd.c:518 load_config: Configuration file amd.conf missing.
+[Nov 16 19:50:17] ERROR[69]: pbx_dundi.c:4955 set_config: Unable to load config dundi.conf
+[Nov 16 19:50:17] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'res_http_media_cache.conf'
+[Nov 16 19:50:17] NOTICE[69]: res_http_media_cache.c:816 load_module: Could not load res_http_media_cache config; using defaults
+[Nov 16 19:50:18] WARNING[69]: app_festival.c:571 load_module: No such configuration file festival.conf
+[Nov 16 19:50:18] WARNING[69]: app_voicemail.c:15574 actual_load_config: Failed to load configuration file.
+[Nov 16 19:50:18] WARNING[69]: app_voicemail_odbc.c:15574 actual_load_config: Failed to load configuration file.
+[Nov 16 19:50:18] WARNING[69]: pbx_app.c:116 ast_register_application2: Already have an application 'VoiceMail'
+[Nov 16 19:50:18] WARNING[69]: pbx_app.c:116 ast_register_application2: Already have an application 'VoiceMailMain'
+[Nov 16 19:50:18] WARNING[69]: pbx_app.c:116 ast_register_application2: Already have an application 'VMAuthenticate'
+[Nov 16 19:50:18] WARNING[69]: pbx_app.c:116 ast_register_application2: Already have an application 'VoiceMailPlayMsg'
+[Nov 16 19:50:18] WARNING[69]: pbx_app.c:116 ast_register_application2: Already have an application 'VMSayName'
+[Nov 16 19:50:18] ERROR[69]: pbx_functions.c:393 __ast_custom_function_register: Function VM_INFO already registered.
+[Nov 16 19:50:18] WARNING[69]: manager.c:7780 ast_manager_register_struct: Manager: Action 'VoicemailUsersList' already registered
+[Nov 16 19:50:18] WARNING[69]: manager.c:7780 ast_manager_register_struct: Manager: Action 'VoicemailUserStatus' already registered
+[Nov 16 19:50:18] WARNING[69]: manager.c:7780 ast_manager_register_struct: Manager: Action 'VoicemailRefresh' already registered
+[Nov 16 19:50:18] WARNING[69]: manager.c:7780 ast_manager_register_struct: Manager: Action 'VoicemailBoxSummary' already registered
+[Nov 16 19:50:18] WARNING[69]: manager.c:7780 ast_manager_register_struct: Manager: Action 'VoicemailMove' already registered
+[Nov 16 19:50:18] WARNING[69]: manager.c:7780 ast_manager_register_struct: Manager: Action 'VoicemailRemove' already registered
+[Nov 16 19:50:18] WARNING[69]: manager.c:7780 ast_manager_register_struct: Manager: Action 'VoicemailForward' already registered
+[Nov 16 19:50:18] ERROR[69]: app_voicemail_odbc.c:16433 load_module: Failure registering applications, functions or tests
+[Nov 16 19:50:18] ERROR[69]: config_options.c:710 aco_process_config: Unable to load config file 'prometheus.conf'
+[Nov 16 19:50:18] NOTICE[69]: app_queue.c:9754 reload_queue_rules: No queuerules.conf file found, queues will not follow penalty rules
+[Nov 16 19:50:18] NOTICE[69]: app_queue.c:10182 reload_queues: No call queueing config file (queues.conf), so no call queues
+[Nov 16 19:50:18] WARNING[69]: loader.c:2572 load_modules: Some non-required modules failed to load.
+[Nov 16 19:50:18] WARNING[69]: loader.c:2666 load_modules: Module 'res_adsi' has been loaded but may be removed in a future release.
+[Nov 16 19:50:18] WARNING[69]: loader.c:2666 load_modules: Module 'app_getcpeid' has been loaded but may be removed in a future release.
+[Nov 16 19:50:18] WARNING[69]: loader.c:2666 load_modules: Module 'app_adsiprog' has been loaded but may be removed in a future release.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: Error loading module 'res_hep_pjsip.so': /opt/callpath/asterisk-modules/res_hep_pjsip.so: undefined symbol: hepv3_is_loaded
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: Error loading module 'res_hep_rtcp.so': /opt/callpath/asterisk-modules/res_hep_rtcp.so: undefined symbol: hepv3_is_loaded
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: res_odbc declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: Declined modules which depend on res_odbc: cel_odbc, cdr_odbc, cdr_adaptive_odbc, func_odbc
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: res_xmpp declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: Declined modules which depend on res_xmpp: chan_motif
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: chan_console declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: res_pjsip_notify declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: res_parking declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: res_calendar declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: Declined modules which depend on res_calendar: res_calendar_ews, res_calendar_icalendar, res_calendar_exchange, res_calendar_caldav
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: app_agent_pool declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: app_confbridge declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: Declined modules which depend on app_confbridge: app_page
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cel_tds declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cdr_tds declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cel_pgsql declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cdr_sqlite3_custom declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cdr_manager declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cdr_csv declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cdr_radius declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cel_sqlite3_custom declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cdr_pgsql declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: cel_radius declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: pbx_lua declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: chan_unistim declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: app_alarmreceiver declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: pbx_ael declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: app_followme declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: res_snmp declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: app_amd declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: pbx_dundi declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: app_festival declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: app_voicemail_odbc declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: res_prometheus declined to load.
+[Nov 16 19:50:18] ERROR[69]: loader.c:2687 load_modules: app_queue declined to load.
+Asterisk Ready.
+Asterisk cleanly ending (0).
+Executing last minute cleanups

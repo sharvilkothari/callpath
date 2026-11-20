@@ -1,0 +1,71 @@
+{
+  "echo_matched_packets": 493,
+  "pbx_to_uac": {
+    "capture_error": "Capture missing, incomplete, or reported kernel drops",
+    "receiver": "sipp-rx",
+    "sender": "pbx-tx",
+    "streams": {}
+  },
+  "uac_to_pbx": {
+    "capture_error": null,
+    "receiver": "pbx-rx",
+    "sender": "sipp-tx",
+    "streams": {
+      "6000/10156/3390111744": {
+        "duplicates": 0,
+        "jitter_ms": 1.2543694729868784,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 95,
+        "sent": 95,
+        "unmatched_received": 0
+      },
+      "6002/10196/3390111746": {
+        "duplicates": 0,
+        "jitter_ms": 10.708172795327643,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 100,
+        "sent": 100,
+        "unmatched_received": 0
+      },
+      "6004/10100/3390111748": {
+        "duplicates": 0,
+        "jitter_ms": 12.232060711787916,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 99,
+        "sent": 99,
+        "unmatched_received": 0
+      },
+      "6006/10092/3390111750": {
+        "duplicates": 0,
+        "jitter_ms": 11.62790541699332,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 100,
+        "sent": 100,
+        "unmatched_received": 0
+      },
+      "6008/10172/3390111752": {
+        "duplicates": 0,
+        "jitter_ms": 10.48821505045265,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 99,
+        "sent": 99,
+        "unmatched_received": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+Run 502143dece6b8ecee48eb6646019aa49
+baseline-soak-01
+TIMED_OUT /results/502143dece6b8ecee48eb6646019aa49
+TIMED_OUT and manifest verified for 502143dece6b8ecee48eb6646019aa49
+Run 53e8fca165711c9aaafbad20c962117b
+baseline-soak-01
+{
+  "completed_trials": 0,
+  "container": "callpath-53e8fca165711c9aaafbad20c962117b",
+  "created_at": "2026-11-16T19:41:27.519923+00:00",
+  "current_trial": "baseline-soak-01",
+  "engine_id": "31e1e2d9-dc62-4b85-a16e-0c0c79010622",
+  "run_id": "53e8fca165711c9aaafbad20c962117b",
+  "status": "CANCELLING",
+  "updated_at": "2026-11-16T19:41:27.521040+00:00"
+}
+CANCELLED /results/53e8fca165711c9aaafbad20c962117b
+CANCELLED and manifest verified for 53e8fca165711c9aaafbad20c962117b
+Run f6d7ff7582e9a153cb1b9e1f26527eee
+baseline-soak-01
+callpath-f6d7ff7582e9a153cb1b9e1f26527eee
+{
+  "errors": [],
+  "recovered": [
+    {
+      "container": "callpath-f6d7ff7582e9a153cb1b9e1f26527eee",
+      "created_at": "2026-11-16T19:41:31.652207+00:00",
+      "engine_id": "31e1e2d9-dc62-4b85-a16e-0c0c79010622",
+      "error": "Interrupted controller; its lab teardown was verified",
+      "run_id": "f6d7ff7582e9a153cb1b9e1f26527eee",
+      "status": "CANCELLED",
+      "updated_at": "2026-11-16T19:41:33.328440+00:00"
+    }
+  ],
+  "remaining": [],
+  "verified": true
+}
+CANCELLED and manifest verified for f6d7ff7582e9a153cb1b9e1f26527eee

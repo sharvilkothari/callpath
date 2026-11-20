@@ -1,0 +1,9 @@
+{
+  "completed_trials": 1,
+  "container": "callpath-46c8c5936e59413ea89acc4dbaff12ad",
+  "created_at": "2026-11-16T19:41:31.561471+00:00",
+  "engine_id": "31e1e2d9-dc62-4b85-a16e-0c0c79010622",
+  "run_id": "46c8c5936e59413ea89acc4dbaff12ad",
+  "status": "SUCCEEDED",
+  "updated_at": "2026-11-16T19:41:36.244157+00:00"
+}

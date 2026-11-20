@@ -1,0 +1,440 @@
+[
+  {
+    "call_id": "1-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "Newchannel",
+    "linkedid": "1794858176.0",
+    "observed_at": 1794858176.9884186,
+    "uniqueid": "1794858176.0"
+  },
+  {
+    "call_id": "1-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "CEL",
+    "eventname": "CHAN_START",
+    "eventtime": "2026-11-16 19:42:56",
+    "extra": "",
+    "linkedid": "1794858176.0",
+    "observed_at": 1794858176.9884887,
+    "uniqueid": "1794858176.0"
+  },
+  {
+    "call_id": "1-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "CEL",
+    "eventname": "ANSWER",
+    "eventtime": "2026-11-16 19:42:56",
+    "extra": "",
+    "linkedid": "1794858176.0",
+    "observed_at": 1794858176.9893453,
+    "uniqueid": "1794858176.0"
+  },
+  {
+    "call_id": "1-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "UserEvent",
+    "linkedid": "1794858176.0",
+    "observed_at": 1794858176.9893749,
+    "runid": "995bd8394f58498c8b1b03d75e312daa",
+    "sipcallid": "1-1484@10.200.1.2",
+    "uniqueid": "1794858176.0",
+    "userevent": "CallPathCorrelation"
+  },
+  {
+    "call_id": "2-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000001",
+    "event": "CEL",
+    "eventname": "CHAN_START",
+    "eventtime": "2026-11-16 19:42:57",
+    "extra": "",
+    "linkedid": "1794858177.3",
+    "observed_at": 1794858177.4870894,
+    "uniqueid": "1794858177.3"
+  },
+  {
+    "call_id": "2-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000001",
+    "event": "Newchannel",
+    "linkedid": "1794858177.3",
+    "observed_at": 1794858177.487271,
+    "uniqueid": "1794858177.3"
+  },
+  {
+    "call_id": "2-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000001",
+    "event": "UserEvent",
+    "linkedid": "1794858177.3",
+    "observed_at": 1794858177.4878688,
+    "runid": "995bd8394f58498c8b1b03d75e312daa",
+    "sipcallid": "2-1484@10.200.1.2",
+    "uniqueid": "1794858177.3",
+    "userevent": "CallPathCorrelation"
+  },
+  {
+    "call_id": "2-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000001",
+    "event": "CEL",
+    "eventname": "ANSWER",
+    "eventtime": "2026-11-16 19:42:57",
+    "extra": "",
+    "linkedid": "1794858177.3",
+    "observed_at": 1794858177.4879394,
+    "uniqueid": "1794858177.3"
+  },
+  {
+    "call_id": "3-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000002",
+    "event": "Newchannel",
+    "linkedid": "1794858177.6",
+    "observed_at": 1794858177.9872012,
+    "uniqueid": "1794858177.6"
+  },
+  {
+    "call_id": "3-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000002",
+    "event": "CEL",
+    "eventname": "CHAN_START",
+    "eventtime": "2026-11-16 19:42:57",
+    "extra": "",
+    "linkedid": "1794858177.6",
+    "observed_at": 1794858177.9872522,
+    "uniqueid": "1794858177.6"
+  },
+  {
+    "call_id": "3-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000002",
+    "event": "UserEvent",
+    "linkedid": "1794858177.6",
+    "observed_at": 1794858177.9877772,
+    "runid": "995bd8394f58498c8b1b03d75e312daa",
+    "sipcallid": "3-1484@10.200.1.2",
+    "uniqueid": "1794858177.6",
+    "userevent": "CallPathCorrelation"
+  },
+  {
+    "call_id": "3-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000002",
+    "event": "CEL",
+    "eventname": "ANSWER",
+    "eventtime": "2026-11-16 19:42:57",
+    "extra": "",
+    "linkedid": "1794858177.6",
+    "observed_at": 1794858177.9879057,
+    "uniqueid": "1794858177.6"
+  },
+  {
+    "call_id": "4-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000003",
+    "event": "Newchannel",
+    "linkedid": "1794858178.9",
+    "observed_at": 1794858178.4873452,
+    "uniqueid": "1794858178.9"
+  },
+  {
+    "call_id": "4-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000003",
+    "event": "CEL",
+    "eventname": "CHAN_START",
+    "eventtime": "2026-11-16 19:42:58",
+    "extra": "",
+    "linkedid": "1794858178.9",
+    "observed_at": 1794858178.487454,
+    "uniqueid": "1794858178.9"
+  },
+  {
+    "call_id": "4-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000003",
+    "event": "UserEvent",
+    "linkedid": "1794858178.9",
+    "observed_at": 1794858178.4880853,
+    "runid": "995bd8394f58498c8b1b03d75e312daa",
+    "sipcallid": "4-1484@10.200.1.2",
+    "uniqueid": "1794858178.9",
+    "userevent": "CallPathCorrelation"
+  },
+  {
+    "call_id": "4-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000003",
+    "event": "CEL",
+    "eventname": "ANSWER",
+    "eventtime": "2026-11-16 19:42:58",
+    "extra": "",
+    "linkedid": "1794858178.9",
+    "observed_at": 1794858178.4881551,
+    "uniqueid": "1794858178.9"
+  },
+  {
+    "call_id": "1-1484@10.200.1.2",
+    "cause": "16",
+    "cause-txt": "Normal Clearing",
+    "channel": "PJSIP/generator-00000000",
+    "event": "Hangup",
+    "linkedid": "1794858176.0",
+    "observed_at": 1794858178.4977956,
+    "uniqueid": "1794858176.0"
+  },
+  {
+    "call_id": "1-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "CEL",
+    "eventname": "HANGUP",
+    "eventtime": "2026-11-16 19:42:58",
+    "extra": "{\"hangupcause\":16,\"hangupsource\":\"PJSIP/generator-00000000\",\"dialstatus\":\"\"}",
+    "linkedid": "1794858176.0",
+    "observed_at": 1794858178.4979804,
+    "uniqueid": "1794858176.0"
+  },
+  {
+    "call_id": "1-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000000",
+    "event": "CEL",
+    "eventname": "CHAN_END",
+    "eventtime": "2026-11-16 19:42:58",
+    "extra": "",
+    "linkedid": "1794858176.0",
+    "observed_at": 1794858178.4980087,
+    "uniqueid": "1794858176.0"
+  },
+  {
+    "call_id": "5-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000004",
+    "event": "Newchannel",
+    "linkedid": "1794858178.14",
+    "observed_at": 1794858178.988626,
+    "uniqueid": "1794858178.14"
+  },
+  {
+    "call_id": "5-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000004",
+    "event": "CEL",
+    "eventname": "CHAN_START",
+    "eventtime": "2026-11-16 19:42:58",
+    "extra": "",
+    "linkedid": "1794858178.14",
+    "observed_at": 1794858178.9886873,
+    "uniqueid": "1794858178.14"
+  },
+  {
+    "call_id": "5-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000004",
+    "event": "CEL",
+    "eventname": "ANSWER",
+    "eventtime": "2026-11-16 19:42:58",
+    "extra": "",
+    "linkedid": "1794858178.14",
+    "observed_at": 1794858178.9893599,
+    "uniqueid": "1794858178.14"
+  },
+  {
+    "call_id": "5-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000004",
+    "event": "UserEvent",
+    "linkedid": "1794858178.14",
+    "observed_at": 1794858178.989388,
+    "runid": "995bd8394f58498c8b1b03d75e312daa",
+    "sipcallid": "5-1484@10.200.1.2",
+    "uniqueid": "1794858178.14",
+    "userevent": "CallPathCorrelation"
+  },
+  {
+    "call_id": "2-1484@10.200.1.2",
+    "cause": "16",
+    "cause-txt": "Normal Clearing",
+    "channel": "PJSIP/generator-00000001",
+    "event": "Hangup",
+    "linkedid": "1794858177.3",
+    "observed_at": 1794858178.9949877,
+    "uniqueid": "1794858177.3"
+  },
+  {
+    "call_id": "2-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000001",
+    "event": "CEL",
+    "eventname": "HANGUP",
+    "eventtime": "2026-11-16 19:42:58",
+    "extra": "{\"hangupcause\":16,\"hangupsource\":\"PJSIP/generator-00000001\",\"dialstatus\":\"\"}",
+    "linkedid": "1794858177.3",
+    "observed_at": 1794858178.9950287,
+    "uniqueid": "1794858177.3"
+  },
+  {
+    "call_id": "2-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000001",
+    "event": "CEL",
+    "eventname": "CHAN_END",
+    "eventtime": "2026-11-16 19:42:58",
+    "extra": "",
+    "linkedid": "1794858177.3",
+    "observed_at": 1794858178.995046,
+    "uniqueid": "1794858177.3"
+  },
+  {
+    "call_id": "6-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000005",
+    "event": "Newchannel",
+    "linkedid": "1794858179.19",
+    "observed_at": 1794858179.488315,
+    "uniqueid": "1794858179.19"
+  },
+  {
+    "call_id": "6-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000005",
+    "event": "CEL",
+    "eventname": "CHAN_START",
+    "eventtime": "2026-11-16 19:42:59",
+    "extra": "",
+    "linkedid": "1794858179.19",
+    "observed_at": 1794858179.488436,
+    "uniqueid": "1794858179.19"
+  },
+  {
+    "call_id": "6-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000005",
+    "event": "UserEvent",
+    "linkedid": "1794858179.19",
+    "observed_at": 1794858179.4900284,
+    "runid": "995bd8394f58498c8b1b03d75e312daa",
+    "sipcallid": "6-1484@10.200.1.2",
+    "uniqueid": "1794858179.19",
+    "userevent": "CallPathCorrelation"
+  },
+  {
+    "call_id": "6-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000005",
+    "event": "CEL",
+    "eventname": "ANSWER",
+    "eventtime": "2026-11-16 19:42:59",
+    "extra": "",
+    "linkedid": "1794858179.19",
+    "observed_at": 1794858179.4900794,
+    "uniqueid": "1794858179.19"
+  },
+  {
+    "call_id": "3-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000002",
+    "event": "CEL",
+    "eventname": "HANGUP",
+    "eventtime": "2026-11-16 19:42:59",
+    "extra": "{\"hangupcause\":16,\"hangupsource\":\"PJSIP/generator-00000002\",\"dialstatus\":\"\"}",
+    "linkedid": "1794858177.6",
+    "observed_at": 1794858179.4933648,
+    "uniqueid": "1794858177.6"
+  },
+  {
+    "call_id": "3-1484@10.200.1.2",
+    "cause": "16",
+    "cause-txt": "Normal Clearing",
+    "channel": "PJSIP/generator-00000002",
+    "event": "Hangup",
+    "linkedid": "1794858177.6",
+    "observed_at": 1794858179.4934077,
+    "uniqueid": "1794858177.6"
+  },
+  {
+    "call_id": "3-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000002",
+    "event": "CEL",
+    "eventname": "CHAN_END",
+    "eventtime": "2026-11-16 19:42:59",
+    "extra": "",
+    "linkedid": "1794858177.6",
+    "observed_at": 1794858179.4934328,
+    "uniqueid": "1794858177.6"
+  },
+  {
+    "call_id": "4-1484@10.200.1.2",
+    "cause": "16",
+    "cause-txt": "Normal Clearing",
+    "channel": "PJSIP/generator-00000003",
+    "event": "Hangup",
+    "linkedid": "1794858178.9",
+    "observed_at": 1794858179.994831,
+    "uniqueid": "1794858178.9"
+  },
+  {
+    "call_id": "4-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000003",
+    "event": "CEL",
+    "eventname": "HANGUP",
+    "eventtime": "2026-11-16 19:42:59",
+    "extra": "{\"hangupcause\":16,\"hangupsource\":\"PJSIP/generator-00000003\",\"dialstatus\":\"\"}",
+    "linkedid": "1794858178.9",
+    "observed_at": 1794858179.9948976,
+    "uniqueid": "1794858178.9"
+  },
+  {
+    "call_id": "4-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000003",
+    "event": "CEL",
+    "eventname": "CHAN_END",
+    "eventtime": "2026-11-16 19:42:59",
+    "extra": "",
+    "linkedid": "1794858178.9",
+    "observed_at": 1794858179.994919,
+    "uniqueid": "1794858178.9"
+  },
+  {
+    "call_id": "5-1484@10.200.1.2",
+    "cause": "16",
+    "cause-txt": "Normal Clearing",
+    "channel": "PJSIP/generator-00000004",
+    "event": "Hangup",
+    "linkedid": "1794858178.14",
+    "observed_at": 1794858180.495485,
+    "uniqueid": "1794858178.14"
+  },
+  {
+    "call_id": "5-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000004",
+    "event": "CEL",
+    "eventname": "HANGUP",
+    "eventtime": "2026-11-16 19:43:00",
+    "extra": "{\"hangupcause\":16,\"hangupsource\":\"PJSIP/generator-00000004\",\"dialstatus\":\"\"}",
+    "linkedid": "1794858178.14",
+    "observed_at": 1794858180.4955983,
+    "uniqueid": "1794858178.14"
+  },
+  {
+    "call_id": "5-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000004",
+    "event": "CEL",
+    "eventname": "CHAN_END",
+    "eventtime": "2026-11-16 19:43:00",
+    "extra": "",
+    "linkedid": "1794858178.14",
+    "observed_at": 1794858180.495632,
+    "uniqueid": "1794858178.14"
+  },
+  {
+    "call_id": "6-1484@10.200.1.2",
+    "cause": "16",
+    "cause-txt": "Normal Clearing",
+    "channel": "PJSIP/generator-00000005",
+    "event": "Hangup",
+    "linkedid": "1794858179.19",
+    "observed_at": 1794858180.996303,
+    "uniqueid": "1794858179.19"
+  },
+  {
+    "call_id": "6-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000005",
+    "event": "CEL",
+    "eventname": "HANGUP",
+    "eventtime": "2026-11-16 19:43:00",
+    "extra": "{\"hangupcause\":16,\"hangupsource\":\"PJSIP/generator-00000005\",\"dialstatus\":\"\"}",
+    "linkedid": "1794858179.19",
+    "observed_at": 1794858180.9963536,
+    "uniqueid": "1794858179.19"
+  },
+  {
+    "call_id": "6-1484@10.200.1.2",
+    "channel": "PJSIP/generator-00000005",
+    "event": "CEL",
+    "eventname": "CHAN_END",
+    "eventtime": "2026-11-16 19:43:00",
+    "extra": "",
+    "linkedid": "1794858179.19",
+    "observed_at": 1794858180.9963777,
+    "uniqueid": "1794858179.19"
+  }
+]

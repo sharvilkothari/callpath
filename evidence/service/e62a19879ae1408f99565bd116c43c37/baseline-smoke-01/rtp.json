@@ -1,0 +1,39 @@
+{
+  "echo_matched_packets": 45,
+  "pbx_to_uac": {
+    "capture_error": null,
+    "receiver": "sipp-rx",
+    "sender": "pbx-tx",
+    "streams": {
+      "10150/6000/2100425530": {
+        "duplicates": 0,
+        "jitter_ms": 0.7262603194997357,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 45,
+        "sent": 45,
+        "unmatched_received": 0
+      }
+    }
+  },
+  "uac_to_pbx": {
+    "capture_error": null,
+    "receiver": "pbx-rx",
+    "sender": "sipp-tx",
+    "streams": {
+      "6000/10150/3390111744": {
+        "duplicates": 0,
+        "jitter_ms": 0.6407597133161196,
+        "missing": 0,
+        "payload_sizes": [
+          160
+        ],
+        "received": 45,
+        "sent": 45,
+        "unmatched_received": 0
+      }
+    }
+  }
+}

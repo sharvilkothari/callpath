@@ -1,0 +1,2710 @@
+{
+  "aggregates": {
+    "baseline": {
+      "loss": {
+        "asterisk_channels_remaining": {
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "asterisk_cli",
+          "unit": "count"
+        },
+        "asterisk_cpu_pct_peak": {
+          "direction": "asterisk",
+          "expected_n": 2,
+          "max": 14.439225600265468,
+          "mean": 12.086716532714258,
+          "median": 12.086716532714258,
+          "min": 9.734207465163047,
+          "n": 2,
+          "sample_stdev": 3.3269502289366053,
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu"
+        },
+        "asterisk_rss_mib_peak": {
+          "direction": "asterisk",
+          "expected_n": 2,
+          "max": 208.953125,
+          "mean": 208.078125,
+          "median": 208.078125,
+          "min": 207.203125,
+          "n": 2,
+          "sample_stdev": 1.2374368670764582,
+          "source": "procfs",
+          "unit": "MiB"
+        },
+        "call_attempts": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 5,
+          "mean": 5.0,
+          "median": 5.0,
+          "min": 5,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        },
+        "call_setup_latency_max_ms": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 16.0,
+          "mean": 10.5,
+          "median": 10.5,
+          "min": 5.0,
+          "n": 2,
+          "sample_stdev": 7.7781745930520225,
+          "source": "sipp_rtt",
+          "unit": "ms"
+        },
+        "call_setup_latency_p50_ms": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 3.0,
+          "mean": 2.5,
+          "median": 2.5,
+          "min": 2.0,
+          "n": 2,
+          "sample_stdev": 0.7071067811865476,
+          "source": "sipp_rtt",
+          "unit": "ms"
+        },
+        "call_setup_latency_p95_ms": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 16.0,
+          "mean": 10.5,
+          "median": 10.5,
+          "min": 5.0,
+          "n": 2,
+          "sample_stdev": 7.7781745930520225,
+          "source": "sipp_rtt",
+          "unit": "ms"
+        },
+        "concurrent_calls_peak": {
+          "direction": "lab_call",
+          "expected_n": 2,
+          "max": 4,
+          "mean": 4.0,
+          "median": 4.0,
+          "min": 4,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv_sampled",
+          "unit": "count"
+        },
+        "cps_achieved": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 1.23,
+          "mean": 1.2295,
+          "median": 1.2295,
+          "min": 1.229,
+          "n": 2,
+          "sample_stdev": 0.0007071067811864697,
+          "source": "sipp_csv",
+          "unit": "calls_per_sec"
+        },
+        "cps_configured": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 2,
+          "mean": 2.0,
+          "median": 2.0,
+          "min": 2,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "run_snapshot",
+          "unit": "calls_per_sec"
+        },
+        "echo_unique_payload_match_rate": {
+          "direction": "round_trip",
+          "expected_n": 2,
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "tshark_echo",
+          "unit": "ratio"
+        },
+        "failed_calls": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        },
+        "hangup_causes": {
+          "count_spreads": {
+            "16": {
+              "expected_n": 2,
+              "max": 5,
+              "mean": 5.0,
+              "median": 5.0,
+              "min": 5,
+              "n": 2,
+              "sample_stdev": 0.0
+            }
+          },
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "n": 2,
+          "sample_stdev": null,
+          "source": "asterisk_ami_cel",
+          "unit": "count_by_cause"
+        },
+        "pbx_call_ids_correlated": {
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": 5,
+          "mean": 5.0,
+          "median": 5.0,
+          "min": 5,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "asterisk_ami",
+          "unit": "count"
+        },
+        "pbx_dtmf_confirmed": {
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "asterisk_ami",
+          "unit": "count"
+        },
+        "pbx_transfer_confirmed": {
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "asterisk_ami",
+          "unit": "count"
+        },
+        "qdisc_drops": {
+          "direction": "netem_links",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "tc_s_qdisc",
+          "unit": "count"
+        },
+        "qdisc_overlimits": {
+          "direction": "netem_links",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "tc_s_qdisc",
+          "unit": "count"
+        },
+        "rtp_packet_loss_pbx_to_uac": {
+          "direction": "pbx_to_uac",
+          "expected_n": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "tshark_pcap_rtp",
+          "unit": "pct"
+        },
+        "rtp_packet_loss_uac_to_pbx": {
+          "direction": "uac_to_pbx",
+          "expected_n": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "tshark_pcap_rtp",
+          "unit": "pct"
+        },
+        "rtp_receiver_jitter_pbx_to_uac": {
+          "direction": "pbx_to_uac",
+          "expected_n": 2,
+          "max": 5.2939490259043716,
+          "mean": 4.40392594403918,
+          "median": 4.40392594403918,
+          "min": 3.513902862173989,
+          "n": 2,
+          "sample_stdev": 1.258682713198853,
+          "source": "tshark_pcap_rtp",
+          "unit": "ms"
+        },
+        "rtp_receiver_jitter_uac_to_pbx": {
+          "direction": "uac_to_pbx",
+          "expected_n": 2,
+          "max": 5.273890897444369,
+          "mean": 4.355444969223899,
+          "median": 4.355444969223899,
+          "min": 3.436999041003429,
+          "n": 2,
+          "sample_stdev": 1.2988786879957352,
+          "source": "tshark_pcap_rtp",
+          "unit": "ms"
+        },
+        "rtt_ms": {
+          "direction": "round_trip",
+          "expected_n": 2,
+          "max": 0.14400482177734375,
+          "mean": 0.133514404296875,
+          "median": 0.133514404296875,
+          "min": 0.12302398681640625,
+          "n": 2,
+          "sample_stdev": 0.0148356906758347,
+          "source": "tshark_echo_p50_unique_payload",
+          "unit": "ms"
+        },
+        "scenario_success_rate": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "ratio"
+        },
+        "sip_codes_pbx_to_uac": {
+          "count_spreads": {
+            "100": {
+              "expected_n": 2,
+              "max": 5,
+              "mean": 5.0,
+              "median": 5.0,
+              "min": 5,
+              "n": 2,
+              "sample_stdev": 0.0
+            },
+            "200": {
+              "expected_n": 2,
+              "max": 10,
+              "mean": 10.0,
+              "median": 10.0,
+              "min": 10,
+              "n": 2,
+              "sample_stdev": 0.0
+            }
+          },
+          "direction": "pbx_to_uac",
+          "expected_n": 2,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "n": 2,
+          "sample_stdev": null,
+          "source": "tshark_sip",
+          "unit": "count_by_code"
+        },
+        "sip_codes_uac_to_pbx": {
+          "count_spreads": {},
+          "direction": "uac_to_pbx",
+          "expected_n": 2,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "n": 2,
+          "sample_stdev": null,
+          "source": "tshark_sip",
+          "unit": "count_by_code"
+        },
+        "sip_retransmits": {
+          "direction": "tx_rx",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        },
+        "sip_timeouts": {
+          "direction": "rx",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        },
+        "sipp_cpu_pct_peak": {
+          "direction": "sipp",
+          "expected_n": 2,
+          "max": 4.898721960673191,
+          "mean": 4.874958799238489,
+          "median": 4.874958799238489,
+          "min": 4.851195637803787,
+          "n": 2,
+          "sample_stdev": 0.03360618518581659,
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu"
+        },
+        "sipp_rss_mib_peak": {
+          "direction": "sipp",
+          "expected_n": 2,
+          "max": 13.3046875,
+          "mean": 13.296875,
+          "median": 13.296875,
+          "min": 13.2890625,
+          "n": 2,
+          "sample_stdev": 0.011048543456039806,
+          "source": "procfs",
+          "unit": "MiB"
+        },
+        "successful_calls": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 5,
+          "mean": 5.0,
+          "median": 5.0,
+          "min": 5,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        }
+      }
+    },
+    "impaired": {
+      "loss": {
+        "asterisk_channels_remaining": {
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "asterisk_cli",
+          "unit": "count"
+        },
+        "asterisk_cpu_pct_peak": {
+          "direction": "asterisk",
+          "expected_n": 2,
+          "max": 9.711307117655146,
+          "mean": 9.555809087444612,
+          "median": 9.555809087444612,
+          "min": 9.400311057234076,
+          "n": 2,
+          "sample_stdev": 0.21990742324603998,
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu"
+        },
+        "asterisk_rss_mib_peak": {
+          "direction": "asterisk",
+          "expected_n": 2,
+          "max": 211.11328125,
+          "mean": 208.984375,
+          "median": 208.984375,
+          "min": 206.85546875,
+          "n": 2,
+          "sample_stdev": 3.0107280917708468,
+          "source": "procfs",
+          "unit": "MiB"
+        },
+        "call_attempts": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 5,
+          "mean": 5.0,
+          "median": 5.0,
+          "min": 5,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        },
+        "call_setup_latency_max_ms": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 33.0,
+          "mean": 20.0,
+          "median": 20.0,
+          "min": 7.0,
+          "n": 2,
+          "sample_stdev": 18.384776310850235,
+          "source": "sipp_rtt",
+          "unit": "ms"
+        },
+        "call_setup_latency_p50_ms": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 6.0,
+          "mean": 4.0,
+          "median": 4.0,
+          "min": 2.0,
+          "n": 2,
+          "sample_stdev": 2.8284271247461903,
+          "source": "sipp_rtt",
+          "unit": "ms"
+        },
+        "call_setup_latency_p95_ms": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 33.0,
+          "mean": 20.0,
+          "median": 20.0,
+          "min": 7.0,
+          "n": 2,
+          "sample_stdev": 18.384776310850235,
+          "source": "sipp_rtt",
+          "unit": "ms"
+        },
+        "concurrent_calls_peak": {
+          "direction": "lab_call",
+          "expected_n": 2,
+          "max": 4,
+          "mean": 4.0,
+          "median": 4.0,
+          "min": 4,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv_sampled",
+          "unit": "count"
+        },
+        "cps_achieved": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 1.229,
+          "mean": 1.229,
+          "median": 1.229,
+          "min": 1.229,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "calls_per_sec"
+        },
+        "cps_configured": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 2,
+          "mean": 2.0,
+          "median": 2.0,
+          "min": 2,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "run_snapshot",
+          "unit": "calls_per_sec"
+        },
+        "echo_unique_payload_match_rate": {
+          "direction": "round_trip",
+          "expected_n": 2,
+          "max": 0.9405405405405406,
+          "mean": 0.9403789659224442,
+          "median": 0.9403789659224442,
+          "min": 0.9402173913043478,
+          "n": 2,
+          "sample_stdev": 0.00022850101624718934,
+          "source": "tshark_echo",
+          "unit": "ratio"
+        },
+        "failed_calls": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        },
+        "hangup_causes": {
+          "count_spreads": {
+            "16": {
+              "expected_n": 2,
+              "max": 5,
+              "mean": 5.0,
+              "median": 5.0,
+              "min": 5,
+              "n": 2,
+              "sample_stdev": 0.0
+            }
+          },
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "n": 2,
+          "sample_stdev": null,
+          "source": "asterisk_ami_cel",
+          "unit": "count_by_cause"
+        },
+        "pbx_call_ids_correlated": {
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": 5,
+          "mean": 5.0,
+          "median": 5.0,
+          "min": 5,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "asterisk_ami",
+          "unit": "count"
+        },
+        "pbx_dtmf_confirmed": {
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "asterisk_ami",
+          "unit": "count"
+        },
+        "pbx_transfer_confirmed": {
+          "direction": "pbx_channel",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "asterisk_ami",
+          "unit": "count"
+        },
+        "qdisc_drops": {
+          "direction": "netem_links",
+          "expected_n": 2,
+          "max": 22,
+          "mean": 22.0,
+          "median": 22.0,
+          "min": 22,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "tc_s_qdisc",
+          "unit": "count"
+        },
+        "qdisc_overlimits": {
+          "direction": "netem_links",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "tc_s_qdisc",
+          "unit": "count"
+        },
+        "rtp_packet_loss_pbx_to_uac": {
+          "direction": "pbx_to_uac",
+          "expected_n": 2,
+          "max": 5.978260869565218,
+          "mean": 5.962103407755581,
+          "median": 5.962103407755581,
+          "min": 5.945945945945946,
+          "n": 2,
+          "sample_stdev": 0.022850101624712654,
+          "source": "tshark_pcap_rtp",
+          "unit": "pct"
+        },
+        "rtp_packet_loss_uac_to_pbx": {
+          "direction": "uac_to_pbx",
+          "expected_n": 2,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "tshark_pcap_rtp",
+          "unit": "pct"
+        },
+        "rtp_receiver_jitter_pbx_to_uac": {
+          "direction": "pbx_to_uac",
+          "expected_n": 2,
+          "max": 4.197415900417417,
+          "mean": 4.159385941208903,
+          "median": 4.159385941208903,
+          "min": 4.12135598200039,
+          "n": 2,
+          "sample_stdev": 0.05378248408917582,
+          "source": "tshark_pcap_rtp",
+          "unit": "ms"
+        },
+        "rtp_receiver_jitter_uac_to_pbx": {
+          "direction": "uac_to_pbx",
+          "expected_n": 2,
+          "max": 4.134696665379567,
+          "mean": 4.104322693193147,
+          "median": 4.104322693193147,
+          "min": 4.073948721006728,
+          "n": 2,
+          "sample_stdev": 0.04295528340917804,
+          "source": "tshark_pcap_rtp",
+          "unit": "ms"
+        },
+        "rtt_ms": {
+          "direction": "round_trip",
+          "expected_n": 2,
+          "max": 0.1220703125,
+          "mean": 0.11861324310302734,
+          "median": 0.11861324310302734,
+          "min": 0.11515617370605469,
+          "n": 2,
+          "sample_stdev": 0.0048890344272637075,
+          "source": "tshark_echo_p50_unique_payload",
+          "unit": "ms"
+        },
+        "scenario_success_rate": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "ratio"
+        },
+        "sip_codes_pbx_to_uac": {
+          "count_spreads": {
+            "100": {
+              "expected_n": 2,
+              "max": 5,
+              "mean": 5.0,
+              "median": 5.0,
+              "min": 5,
+              "n": 2,
+              "sample_stdev": 0.0
+            },
+            "200": {
+              "expected_n": 2,
+              "max": 10,
+              "mean": 10.0,
+              "median": 10.0,
+              "min": 10,
+              "n": 2,
+              "sample_stdev": 0.0
+            }
+          },
+          "direction": "pbx_to_uac",
+          "expected_n": 2,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "n": 2,
+          "sample_stdev": null,
+          "source": "tshark_sip",
+          "unit": "count_by_code"
+        },
+        "sip_codes_uac_to_pbx": {
+          "count_spreads": {},
+          "direction": "uac_to_pbx",
+          "expected_n": 2,
+          "max": null,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "n": 2,
+          "sample_stdev": null,
+          "source": "tshark_sip",
+          "unit": "count_by_code"
+        },
+        "sip_retransmits": {
+          "direction": "tx_rx",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        },
+        "sip_timeouts": {
+          "direction": "rx",
+          "expected_n": 2,
+          "max": 0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        },
+        "sipp_cpu_pct_peak": {
+          "direction": "sipp",
+          "expected_n": 2,
+          "max": 4.905721236070281,
+          "mean": 4.878526593604775,
+          "median": 4.878526593604775,
+          "min": 4.85133195113927,
+          "n": 2,
+          "sample_stdev": 0.03845903219860567,
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu"
+        },
+        "sipp_rss_mib_peak": {
+          "direction": "sipp",
+          "expected_n": 2,
+          "max": 13.5546875,
+          "mean": 13.421875,
+          "median": 13.421875,
+          "min": 13.2890625,
+          "n": 2,
+          "sample_stdev": 0.18782523875267668,
+          "source": "procfs",
+          "unit": "MiB"
+        },
+        "successful_calls": {
+          "direction": "uac_to_uas",
+          "expected_n": 2,
+          "max": 5,
+          "mean": 5.0,
+          "median": 5.0,
+          "min": 5,
+          "n": 2,
+          "sample_stdev": 0.0,
+          "source": "sipp_csv",
+          "unit": "count"
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "check": "baseline/loss minimum scenario success",
+      "observed": 1.0,
+      "operator": ">=",
+      "status": "PASS",
+      "threshold": 0.99
+    },
+    {
+      "check": "impaired/loss minimum scenario success",
+      "observed": 1.0,
+      "operator": ">=",
+      "status": "PASS",
+      "threshold": 0.8
+    }
+  ],
+  "cleanup": {
+    "errors": [],
+    "remaining": [],
+    "verified": true
+  },
+  "comparison": {
+    "loss/asterisk_channels_remaining": {
+      "baseline": {
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "asterisk_cli",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "asterisk_cli",
+        "unit": "count"
+      }
+    },
+    "loss/asterisk_cpu_pct_peak": {
+      "baseline": {
+        "direction": "asterisk",
+        "expected_n": 2,
+        "max": 14.439225600265468,
+        "mean": 12.086716532714258,
+        "median": 12.086716532714258,
+        "min": 9.734207465163047,
+        "n": 2,
+        "sample_stdev": 3.3269502289366053,
+        "source": "procfs",
+        "unit": "pct_one_logical_cpu"
+      },
+      "median_delta": -2.530907445269646,
+      "subject": {
+        "direction": "asterisk",
+        "expected_n": 2,
+        "max": 9.711307117655146,
+        "mean": 9.555809087444612,
+        "median": 9.555809087444612,
+        "min": 9.400311057234076,
+        "n": 2,
+        "sample_stdev": 0.21990742324603998,
+        "source": "procfs",
+        "unit": "pct_one_logical_cpu"
+      }
+    },
+    "loss/asterisk_rss_mib_peak": {
+      "baseline": {
+        "direction": "asterisk",
+        "expected_n": 2,
+        "max": 208.953125,
+        "mean": 208.078125,
+        "median": 208.078125,
+        "min": 207.203125,
+        "n": 2,
+        "sample_stdev": 1.2374368670764582,
+        "source": "procfs",
+        "unit": "MiB"
+      },
+      "median_delta": 0.90625,
+      "subject": {
+        "direction": "asterisk",
+        "expected_n": 2,
+        "max": 211.11328125,
+        "mean": 208.984375,
+        "median": 208.984375,
+        "min": 206.85546875,
+        "n": 2,
+        "sample_stdev": 3.0107280917708468,
+        "source": "procfs",
+        "unit": "MiB"
+      }
+    },
+    "loss/call_attempts": {
+      "baseline": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 5,
+        "mean": 5.0,
+        "median": 5.0,
+        "min": 5,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 5,
+        "mean": 5.0,
+        "median": 5.0,
+        "min": 5,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      }
+    },
+    "loss/call_setup_latency_max_ms": {
+      "baseline": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 16.0,
+        "mean": 10.5,
+        "median": 10.5,
+        "min": 5.0,
+        "n": 2,
+        "sample_stdev": 7.7781745930520225,
+        "source": "sipp_rtt",
+        "unit": "ms"
+      },
+      "median_delta": 9.5,
+      "subject": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 33.0,
+        "mean": 20.0,
+        "median": 20.0,
+        "min": 7.0,
+        "n": 2,
+        "sample_stdev": 18.384776310850235,
+        "source": "sipp_rtt",
+        "unit": "ms"
+      }
+    },
+    "loss/call_setup_latency_p50_ms": {
+      "baseline": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 3.0,
+        "mean": 2.5,
+        "median": 2.5,
+        "min": 2.0,
+        "n": 2,
+        "sample_stdev": 0.7071067811865476,
+        "source": "sipp_rtt",
+        "unit": "ms"
+      },
+      "median_delta": 1.5,
+      "subject": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 6.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "min": 2.0,
+        "n": 2,
+        "sample_stdev": 2.8284271247461903,
+        "source": "sipp_rtt",
+        "unit": "ms"
+      }
+    },
+    "loss/call_setup_latency_p95_ms": {
+      "baseline": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 16.0,
+        "mean": 10.5,
+        "median": 10.5,
+        "min": 5.0,
+        "n": 2,
+        "sample_stdev": 7.7781745930520225,
+        "source": "sipp_rtt",
+        "unit": "ms"
+      },
+      "median_delta": 9.5,
+      "subject": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 33.0,
+        "mean": 20.0,
+        "median": 20.0,
+        "min": 7.0,
+        "n": 2,
+        "sample_stdev": 18.384776310850235,
+        "source": "sipp_rtt",
+        "unit": "ms"
+      }
+    },
+    "loss/concurrent_calls_peak": {
+      "baseline": {
+        "direction": "lab_call",
+        "expected_n": 2,
+        "max": 4,
+        "mean": 4.0,
+        "median": 4.0,
+        "min": 4,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv_sampled",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "lab_call",
+        "expected_n": 2,
+        "max": 4,
+        "mean": 4.0,
+        "median": 4.0,
+        "min": 4,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv_sampled",
+        "unit": "count"
+      }
+    },
+    "loss/cps_achieved": {
+      "baseline": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 1.23,
+        "mean": 1.2295,
+        "median": 1.2295,
+        "min": 1.229,
+        "n": 2,
+        "sample_stdev": 0.0007071067811864697,
+        "source": "sipp_csv",
+        "unit": "calls_per_sec"
+      },
+      "median_delta": -0.0004999999999999449,
+      "subject": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 1.229,
+        "mean": 1.229,
+        "median": 1.229,
+        "min": 1.229,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "calls_per_sec"
+      }
+    },
+    "loss/cps_configured": {
+      "baseline": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 2,
+        "mean": 2.0,
+        "median": 2.0,
+        "min": 2,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "run_snapshot",
+        "unit": "calls_per_sec"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 2,
+        "mean": 2.0,
+        "median": 2.0,
+        "min": 2,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "run_snapshot",
+        "unit": "calls_per_sec"
+      }
+    },
+    "loss/echo_unique_payload_match_rate": {
+      "baseline": {
+        "direction": "round_trip",
+        "expected_n": 2,
+        "max": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "tshark_echo",
+        "unit": "ratio"
+      },
+      "median_delta": -0.05962103407755581,
+      "subject": {
+        "direction": "round_trip",
+        "expected_n": 2,
+        "max": 0.9405405405405406,
+        "mean": 0.9403789659224442,
+        "median": 0.9403789659224442,
+        "min": 0.9402173913043478,
+        "n": 2,
+        "sample_stdev": 0.00022850101624718934,
+        "source": "tshark_echo",
+        "unit": "ratio"
+      }
+    },
+    "loss/failed_calls": {
+      "baseline": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      }
+    },
+    "loss/hangup_causes": {
+      "baseline": {
+        "count_spreads": {
+          "16": {
+            "expected_n": 2,
+            "max": 5,
+            "mean": 5.0,
+            "median": 5.0,
+            "min": 5,
+            "n": 2,
+            "sample_stdev": 0.0
+          }
+        },
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "n": 2,
+        "sample_stdev": null,
+        "source": "asterisk_ami_cel",
+        "unit": "count_by_cause"
+      },
+      "median_delta": null,
+      "subject": {
+        "count_spreads": {
+          "16": {
+            "expected_n": 2,
+            "max": 5,
+            "mean": 5.0,
+            "median": 5.0,
+            "min": 5,
+            "n": 2,
+            "sample_stdev": 0.0
+          }
+        },
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "n": 2,
+        "sample_stdev": null,
+        "source": "asterisk_ami_cel",
+        "unit": "count_by_cause"
+      }
+    },
+    "loss/pbx_call_ids_correlated": {
+      "baseline": {
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": 5,
+        "mean": 5.0,
+        "median": 5.0,
+        "min": 5,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "asterisk_ami",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": 5,
+        "mean": 5.0,
+        "median": 5.0,
+        "min": 5,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "asterisk_ami",
+        "unit": "count"
+      }
+    },
+    "loss/pbx_dtmf_confirmed": {
+      "baseline": {
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "asterisk_ami",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "asterisk_ami",
+        "unit": "count"
+      }
+    },
+    "loss/pbx_transfer_confirmed": {
+      "baseline": {
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "asterisk_ami",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "pbx_channel",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "asterisk_ami",
+        "unit": "count"
+      }
+    },
+    "loss/qdisc_drops": {
+      "baseline": {
+        "direction": "netem_links",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "tc_s_qdisc",
+        "unit": "count"
+      },
+      "median_delta": 22.0,
+      "subject": {
+        "direction": "netem_links",
+        "expected_n": 2,
+        "max": 22,
+        "mean": 22.0,
+        "median": 22.0,
+        "min": 22,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "tc_s_qdisc",
+        "unit": "count"
+      }
+    },
+    "loss/qdisc_overlimits": {
+      "baseline": {
+        "direction": "netem_links",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "tc_s_qdisc",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "netem_links",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "tc_s_qdisc",
+        "unit": "count"
+      }
+    },
+    "loss/rtp_packet_loss_pbx_to_uac": {
+      "baseline": {
+        "direction": "pbx_to_uac",
+        "expected_n": 2,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "tshark_pcap_rtp",
+        "unit": "pct"
+      },
+      "median_delta": 5.962103407755581,
+      "subject": {
+        "direction": "pbx_to_uac",
+        "expected_n": 2,
+        "max": 5.978260869565218,
+        "mean": 5.962103407755581,
+        "median": 5.962103407755581,
+        "min": 5.945945945945946,
+        "n": 2,
+        "sample_stdev": 0.022850101624712654,
+        "source": "tshark_pcap_rtp",
+        "unit": "pct"
+      }
+    },
+    "loss/rtp_packet_loss_uac_to_pbx": {
+      "baseline": {
+        "direction": "uac_to_pbx",
+        "expected_n": 2,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "tshark_pcap_rtp",
+        "unit": "pct"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "uac_to_pbx",
+        "expected_n": 2,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "tshark_pcap_rtp",
+        "unit": "pct"
+      }
+    },
+    "loss/rtp_receiver_jitter_pbx_to_uac": {
+      "baseline": {
+        "direction": "pbx_to_uac",
+        "expected_n": 2,
+        "max": 5.2939490259043716,
+        "mean": 4.40392594403918,
+        "median": 4.40392594403918,
+        "min": 3.513902862173989,
+        "n": 2,
+        "sample_stdev": 1.258682713198853,
+        "source": "tshark_pcap_rtp",
+        "unit": "ms"
+      },
+      "median_delta": -0.2445400028302771,
+      "subject": {
+        "direction": "pbx_to_uac",
+        "expected_n": 2,
+        "max": 4.197415900417417,
+        "mean": 4.159385941208903,
+        "median": 4.159385941208903,
+        "min": 4.12135598200039,
+        "n": 2,
+        "sample_stdev": 0.05378248408917582,
+        "source": "tshark_pcap_rtp",
+        "unit": "ms"
+      }
+    },
+    "loss/rtp_receiver_jitter_uac_to_pbx": {
+      "baseline": {
+        "direction": "uac_to_pbx",
+        "expected_n": 2,
+        "max": 5.273890897444369,
+        "mean": 4.355444969223899,
+        "median": 4.355444969223899,
+        "min": 3.436999041003429,
+        "n": 2,
+        "sample_stdev": 1.2988786879957352,
+        "source": "tshark_pcap_rtp",
+        "unit": "ms"
+      },
+      "median_delta": -0.25112227603075166,
+      "subject": {
+        "direction": "uac_to_pbx",
+        "expected_n": 2,
+        "max": 4.134696665379567,
+        "mean": 4.104322693193147,
+        "median": 4.104322693193147,
+        "min": 4.073948721006728,
+        "n": 2,
+        "sample_stdev": 0.04295528340917804,
+        "source": "tshark_pcap_rtp",
+        "unit": "ms"
+      }
+    },
+    "loss/rtt_ms": {
+      "baseline": {
+        "direction": "round_trip",
+        "expected_n": 2,
+        "max": 0.14400482177734375,
+        "mean": 0.133514404296875,
+        "median": 0.133514404296875,
+        "min": 0.12302398681640625,
+        "n": 2,
+        "sample_stdev": 0.0148356906758347,
+        "source": "tshark_echo_p50_unique_payload",
+        "unit": "ms"
+      },
+      "median_delta": -0.014901161193847656,
+      "subject": {
+        "direction": "round_trip",
+        "expected_n": 2,
+        "max": 0.1220703125,
+        "mean": 0.11861324310302734,
+        "median": 0.11861324310302734,
+        "min": 0.11515617370605469,
+        "n": 2,
+        "sample_stdev": 0.0048890344272637075,
+        "source": "tshark_echo_p50_unique_payload",
+        "unit": "ms"
+      }
+    },
+    "loss/scenario_success_rate": {
+      "baseline": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "ratio"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "ratio"
+      }
+    },
+    "loss/sip_codes_pbx_to_uac": {
+      "baseline": {
+        "count_spreads": {
+          "100": {
+            "expected_n": 2,
+            "max": 5,
+            "mean": 5.0,
+            "median": 5.0,
+            "min": 5,
+            "n": 2,
+            "sample_stdev": 0.0
+          },
+          "200": {
+            "expected_n": 2,
+            "max": 10,
+            "mean": 10.0,
+            "median": 10.0,
+            "min": 10,
+            "n": 2,
+            "sample_stdev": 0.0
+          }
+        },
+        "direction": "pbx_to_uac",
+        "expected_n": 2,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "n": 2,
+        "sample_stdev": null,
+        "source": "tshark_sip",
+        "unit": "count_by_code"
+      },
+      "median_delta": null,
+      "subject": {
+        "count_spreads": {
+          "100": {
+            "expected_n": 2,
+            "max": 5,
+            "mean": 5.0,
+            "median": 5.0,
+            "min": 5,
+            "n": 2,
+            "sample_stdev": 0.0
+          },
+          "200": {
+            "expected_n": 2,
+            "max": 10,
+            "mean": 10.0,
+            "median": 10.0,
+            "min": 10,
+            "n": 2,
+            "sample_stdev": 0.0
+          }
+        },
+        "direction": "pbx_to_uac",
+        "expected_n": 2,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "n": 2,
+        "sample_stdev": null,
+        "source": "tshark_sip",
+        "unit": "count_by_code"
+      }
+    },
+    "loss/sip_codes_uac_to_pbx": {
+      "baseline": {
+        "count_spreads": {},
+        "direction": "uac_to_pbx",
+        "expected_n": 2,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "n": 2,
+        "sample_stdev": null,
+        "source": "tshark_sip",
+        "unit": "count_by_code"
+      },
+      "median_delta": null,
+      "subject": {
+        "count_spreads": {},
+        "direction": "uac_to_pbx",
+        "expected_n": 2,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "n": 2,
+        "sample_stdev": null,
+        "source": "tshark_sip",
+        "unit": "count_by_code"
+      }
+    },
+    "loss/sip_retransmits": {
+      "baseline": {
+        "direction": "tx_rx",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "tx_rx",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      }
+    },
+    "loss/sip_timeouts": {
+      "baseline": {
+        "direction": "rx",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "rx",
+        "expected_n": 2,
+        "max": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      }
+    },
+    "loss/sipp_cpu_pct_peak": {
+      "baseline": {
+        "direction": "sipp",
+        "expected_n": 2,
+        "max": 4.898721960673191,
+        "mean": 4.874958799238489,
+        "median": 4.874958799238489,
+        "min": 4.851195637803787,
+        "n": 2,
+        "sample_stdev": 0.03360618518581659,
+        "source": "procfs",
+        "unit": "pct_one_logical_cpu"
+      },
+      "median_delta": 0.003567794366285959,
+      "subject": {
+        "direction": "sipp",
+        "expected_n": 2,
+        "max": 4.905721236070281,
+        "mean": 4.878526593604775,
+        "median": 4.878526593604775,
+        "min": 4.85133195113927,
+        "n": 2,
+        "sample_stdev": 0.03845903219860567,
+        "source": "procfs",
+        "unit": "pct_one_logical_cpu"
+      }
+    },
+    "loss/sipp_rss_mib_peak": {
+      "baseline": {
+        "direction": "sipp",
+        "expected_n": 2,
+        "max": 13.3046875,
+        "mean": 13.296875,
+        "median": 13.296875,
+        "min": 13.2890625,
+        "n": 2,
+        "sample_stdev": 0.011048543456039806,
+        "source": "procfs",
+        "unit": "MiB"
+      },
+      "median_delta": 0.125,
+      "subject": {
+        "direction": "sipp",
+        "expected_n": 2,
+        "max": 13.5546875,
+        "mean": 13.421875,
+        "median": 13.421875,
+        "min": 13.2890625,
+        "n": 2,
+        "sample_stdev": 0.18782523875267668,
+        "source": "procfs",
+        "unit": "MiB"
+      }
+    },
+    "loss/successful_calls": {
+      "baseline": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 5,
+        "mean": 5.0,
+        "median": 5.0,
+        "min": 5,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      },
+      "median_delta": 0.0,
+      "subject": {
+        "direction": "uac_to_uas",
+        "expected_n": 2,
+        "max": 5,
+        "mean": 5.0,
+        "median": 5.0,
+        "min": 5,
+        "n": 2,
+        "sample_stdev": 0.0,
+        "source": "sipp_csv",
+        "unit": "count"
+      }
+    }
+  },
+  "notes": [
+    "Experiments describe the isolated local Asterisk lab. Carrier, production and conversational quality conclusions require separate evidence.",
+    "The seeded netem sequence depends on packet order and the host schedule.",
+    "Qdisc drops may include both configured impairment and queue saturation.",
+    "Setup timings are SIP INVITE to first successful response. Echo RTT requires uniquely matched round-trip payloads.",
+    "RTP loss uses sender-to-receiver identity matching. Jitter is the median of final RFC 3550 estimates across streams.",
+    "CPU utilization is process-based, in units of one logical CPU.",
+    "Fewer than five planned repeats per condition; treat observed spread as preliminary."
+  ],
+  "run_id": "569b36d08c7ff06eed2242c2d878bcfb",
+  "snapshot_sha256": "053122c334122fb15670230506b45a6b428a76e5c8159979a27fdf059022938b",
+  "status": "SUCCEEDED",
+  "trials": [
+    {
+      "cleanup": {
+        "errors": [],
+        "remaining": [],
+        "verified": true
+      },
+      "condition": "baseline",
+      "directory": "baseline-loss-01",
+      "id": "2d15e25499dd4c388a6e88776d47a7b0",
+      "iteration": 1,
+      "metrics": {
+        "asterisk_channels_remaining": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_cli",
+          "unit": "count",
+          "value": 0
+        },
+        "asterisk_cpu_pct_peak": {
+          "availability": "available",
+          "direction": "asterisk",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": 14.439225600265468
+        },
+        "asterisk_rss_mib_peak": {
+          "availability": "available",
+          "direction": "asterisk",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": 208.953125
+        },
+        "call_attempts": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 5
+        },
+        "call_setup_latency_max_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 5.0
+        },
+        "call_setup_latency_p50_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 2.0
+        },
+        "call_setup_latency_p95_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 5.0
+        },
+        "concurrent_calls_peak": {
+          "availability": "available",
+          "direction": "lab_call",
+          "source": "sipp_csv_sampled",
+          "unit": "count",
+          "value": 4
+        },
+        "cps_achieved": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "calls_per_sec",
+          "value": 1.23
+        },
+        "cps_configured": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "run_snapshot",
+          "unit": "calls_per_sec",
+          "value": 2
+        },
+        "echo_unique_payload_match_rate": {
+          "availability": "available",
+          "direction": "round_trip",
+          "source": "tshark_echo",
+          "unit": "ratio",
+          "value": 1.0
+        },
+        "failed_calls": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "hangup_causes": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami_cel",
+          "unit": "count_by_cause",
+          "value": {
+            "16": 5
+          }
+        },
+        "pbx_call_ids_correlated": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 5
+        },
+        "pbx_dtmf_confirmed": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 0
+        },
+        "pbx_transfer_confirmed": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 0
+        },
+        "qdisc_drops": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 0
+        },
+        "qdisc_overlimits": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 0
+        },
+        "rtp_packet_loss_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": 0.0
+        },
+        "rtp_packet_loss_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": 0.0
+        },
+        "rtp_receiver_jitter_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": 3.513902862173989
+        },
+        "rtp_receiver_jitter_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": 3.436999041003429
+        },
+        "rtt_ms": {
+          "availability": "available",
+          "direction": "round_trip",
+          "source": "tshark_echo_p50_unique_payload",
+          "unit": "ms",
+          "value": 0.14400482177734375
+        },
+        "scenario_success_rate": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "ratio",
+          "value": 1.0
+        },
+        "sip_codes_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": {
+            "100": 5,
+            "200": 10
+          }
+        },
+        "sip_codes_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": {}
+        },
+        "sip_retransmits": {
+          "availability": "available",
+          "direction": "tx_rx",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "sip_timeouts": {
+          "availability": "available",
+          "direction": "rx",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "sipp_cpu_pct_peak": {
+          "availability": "available",
+          "direction": "sipp",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": 4.851195637803787
+        },
+        "sipp_rss_mib_peak": {
+          "availability": "available",
+          "direction": "sipp",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": 13.3046875
+        },
+        "successful_calls": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 5
+        }
+      },
+      "sipp_exit_code": 0,
+      "stage": "loss",
+      "status": "SUCCEEDED"
+    },
+    {
+      "cleanup": {
+        "errors": [],
+        "remaining": [],
+        "verified": true
+      },
+      "condition": "baseline",
+      "directory": "baseline-loss-02",
+      "id": "8c9f2d502a144e888a484add47e439a4",
+      "iteration": 2,
+      "metrics": {
+        "asterisk_channels_remaining": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_cli",
+          "unit": "count",
+          "value": 0
+        },
+        "asterisk_cpu_pct_peak": {
+          "availability": "available",
+          "direction": "asterisk",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": 9.734207465163047
+        },
+        "asterisk_rss_mib_peak": {
+          "availability": "available",
+          "direction": "asterisk",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": 207.203125
+        },
+        "call_attempts": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 5
+        },
+        "call_setup_latency_max_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 16.0
+        },
+        "call_setup_latency_p50_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 3.0
+        },
+        "call_setup_latency_p95_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 16.0
+        },
+        "concurrent_calls_peak": {
+          "availability": "available",
+          "direction": "lab_call",
+          "source": "sipp_csv_sampled",
+          "unit": "count",
+          "value": 4
+        },
+        "cps_achieved": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "calls_per_sec",
+          "value": 1.229
+        },
+        "cps_configured": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "run_snapshot",
+          "unit": "calls_per_sec",
+          "value": 2
+        },
+        "echo_unique_payload_match_rate": {
+          "availability": "available",
+          "direction": "round_trip",
+          "source": "tshark_echo",
+          "unit": "ratio",
+          "value": 1.0
+        },
+        "failed_calls": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "hangup_causes": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami_cel",
+          "unit": "count_by_cause",
+          "value": {
+            "16": 5
+          }
+        },
+        "pbx_call_ids_correlated": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 5
+        },
+        "pbx_dtmf_confirmed": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 0
+        },
+        "pbx_transfer_confirmed": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 0
+        },
+        "qdisc_drops": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 0
+        },
+        "qdisc_overlimits": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 0
+        },
+        "rtp_packet_loss_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": 0.0
+        },
+        "rtp_packet_loss_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": 0.0
+        },
+        "rtp_receiver_jitter_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": 5.2939490259043716
+        },
+        "rtp_receiver_jitter_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": 5.273890897444369
+        },
+        "rtt_ms": {
+          "availability": "available",
+          "direction": "round_trip",
+          "source": "tshark_echo_p50_unique_payload",
+          "unit": "ms",
+          "value": 0.12302398681640625
+        },
+        "scenario_success_rate": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "ratio",
+          "value": 1.0
+        },
+        "sip_codes_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": {
+            "100": 5,
+            "200": 10
+          }
+        },
+        "sip_codes_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": {}
+        },
+        "sip_retransmits": {
+          "availability": "available",
+          "direction": "tx_rx",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "sip_timeouts": {
+          "availability": "available",
+          "direction": "rx",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "sipp_cpu_pct_peak": {
+          "availability": "available",
+          "direction": "sipp",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": 4.898721960673191
+        },
+        "sipp_rss_mib_peak": {
+          "availability": "available",
+          "direction": "sipp",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": 13.2890625
+        },
+        "successful_calls": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 5
+        }
+      },
+      "sipp_exit_code": 0,
+      "stage": "loss",
+      "status": "SUCCEEDED"
+    },
+    {
+      "cleanup": {
+        "errors": [],
+        "remaining": [],
+        "verified": true
+      },
+      "condition": "impaired",
+      "directory": "impaired-loss-01",
+      "id": "abfa784b15634066966eee2638f98b20",
+      "iteration": 1,
+      "metrics": {
+        "asterisk_channels_remaining": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_cli",
+          "unit": "count",
+          "value": 0
+        },
+        "asterisk_cpu_pct_peak": {
+          "availability": "available",
+          "direction": "asterisk",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": 9.400311057234076
+        },
+        "asterisk_rss_mib_peak": {
+          "availability": "available",
+          "direction": "asterisk",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": 206.85546875
+        },
+        "call_attempts": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 5
+        },
+        "call_setup_latency_max_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 7.0
+        },
+        "call_setup_latency_p50_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 6.0
+        },
+        "call_setup_latency_p95_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 7.0
+        },
+        "concurrent_calls_peak": {
+          "availability": "available",
+          "direction": "lab_call",
+          "source": "sipp_csv_sampled",
+          "unit": "count",
+          "value": 4
+        },
+        "cps_achieved": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "calls_per_sec",
+          "value": 1.229
+        },
+        "cps_configured": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "run_snapshot",
+          "unit": "calls_per_sec",
+          "value": 2
+        },
+        "echo_unique_payload_match_rate": {
+          "availability": "available",
+          "direction": "round_trip",
+          "source": "tshark_echo",
+          "unit": "ratio",
+          "value": 0.9402173913043478
+        },
+        "failed_calls": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "hangup_causes": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami_cel",
+          "unit": "count_by_cause",
+          "value": {
+            "16": 5
+          }
+        },
+        "pbx_call_ids_correlated": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 5
+        },
+        "pbx_dtmf_confirmed": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 0
+        },
+        "pbx_transfer_confirmed": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 0
+        },
+        "qdisc_drops": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 22
+        },
+        "qdisc_overlimits": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 0
+        },
+        "rtp_packet_loss_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": 5.978260869565218
+        },
+        "rtp_packet_loss_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": 0.0
+        },
+        "rtp_receiver_jitter_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": 4.197415900417417
+        },
+        "rtp_receiver_jitter_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": 4.134696665379567
+        },
+        "rtt_ms": {
+          "availability": "available",
+          "direction": "round_trip",
+          "source": "tshark_echo_p50_unique_payload",
+          "unit": "ms",
+          "value": 0.1220703125
+        },
+        "scenario_success_rate": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "ratio",
+          "value": 1.0
+        },
+        "sip_codes_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": {
+            "100": 5,
+            "200": 10
+          }
+        },
+        "sip_codes_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": {}
+        },
+        "sip_retransmits": {
+          "availability": "available",
+          "direction": "tx_rx",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "sip_timeouts": {
+          "availability": "available",
+          "direction": "rx",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "sipp_cpu_pct_peak": {
+          "availability": "available",
+          "direction": "sipp",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": 4.905721236070281
+        },
+        "sipp_rss_mib_peak": {
+          "availability": "available",
+          "direction": "sipp",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": 13.2890625
+        },
+        "successful_calls": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 5
+        }
+      },
+      "sipp_exit_code": 0,
+      "stage": "loss",
+      "status": "SUCCEEDED"
+    },
+    {
+      "cleanup": {
+        "errors": [],
+        "remaining": [],
+        "verified": true
+      },
+      "condition": "impaired",
+      "directory": "impaired-loss-02",
+      "id": "7d623f289e6e4ab3bf743b4f54232a5d",
+      "iteration": 2,
+      "metrics": {
+        "asterisk_channels_remaining": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_cli",
+          "unit": "count",
+          "value": 0
+        },
+        "asterisk_cpu_pct_peak": {
+          "availability": "available",
+          "direction": "asterisk",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": 9.711307117655146
+        },
+        "asterisk_rss_mib_peak": {
+          "availability": "available",
+          "direction": "asterisk",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": 211.11328125
+        },
+        "call_attempts": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 5
+        },
+        "call_setup_latency_max_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 33.0
+        },
+        "call_setup_latency_p50_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 2.0
+        },
+        "call_setup_latency_p95_ms": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_rtt",
+          "unit": "ms",
+          "value": 33.0
+        },
+        "concurrent_calls_peak": {
+          "availability": "available",
+          "direction": "lab_call",
+          "source": "sipp_csv_sampled",
+          "unit": "count",
+          "value": 4
+        },
+        "cps_achieved": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "calls_per_sec",
+          "value": 1.229
+        },
+        "cps_configured": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "run_snapshot",
+          "unit": "calls_per_sec",
+          "value": 2
+        },
+        "echo_unique_payload_match_rate": {
+          "availability": "available",
+          "direction": "round_trip",
+          "source": "tshark_echo",
+          "unit": "ratio",
+          "value": 0.9405405405405406
+        },
+        "failed_calls": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "hangup_causes": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami_cel",
+          "unit": "count_by_cause",
+          "value": {
+            "16": 5
+          }
+        },
+        "pbx_call_ids_correlated": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 5
+        },
+        "pbx_dtmf_confirmed": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 0
+        },
+        "pbx_transfer_confirmed": {
+          "availability": "available",
+          "direction": "pbx_channel",
+          "source": "asterisk_ami",
+          "unit": "count",
+          "value": 0
+        },
+        "qdisc_drops": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 22
+        },
+        "qdisc_overlimits": {
+          "availability": "available",
+          "direction": "netem_links",
+          "source": "tc_s_qdisc",
+          "unit": "count",
+          "value": 0
+        },
+        "rtp_packet_loss_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": 5.945945945945946
+        },
+        "rtp_packet_loss_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_pcap_rtp",
+          "unit": "pct",
+          "value": 0.0
+        },
+        "rtp_receiver_jitter_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": 4.12135598200039
+        },
+        "rtp_receiver_jitter_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_pcap_rtp",
+          "unit": "ms",
+          "value": 4.073948721006728
+        },
+        "rtt_ms": {
+          "availability": "available",
+          "direction": "round_trip",
+          "source": "tshark_echo_p50_unique_payload",
+          "unit": "ms",
+          "value": 0.11515617370605469
+        },
+        "scenario_success_rate": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "ratio",
+          "value": 1.0
+        },
+        "sip_codes_pbx_to_uac": {
+          "availability": "available",
+          "direction": "pbx_to_uac",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": {
+            "100": 5,
+            "200": 10
+          }
+        },
+        "sip_codes_uac_to_pbx": {
+          "availability": "available",
+          "direction": "uac_to_pbx",
+          "source": "tshark_sip",
+          "unit": "count_by_code",
+          "value": {}
+        },
+        "sip_retransmits": {
+          "availability": "available",
+          "direction": "tx_rx",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "sip_timeouts": {
+          "availability": "available",
+          "direction": "rx",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 0
+        },
+        "sipp_cpu_pct_peak": {
+          "availability": "available",
+          "direction": "sipp",
+          "source": "procfs",
+          "unit": "pct_one_logical_cpu",
+          "value": 4.85133195113927
+        },
+        "sipp_rss_mib_peak": {
+          "availability": "available",
+          "direction": "sipp",
+          "source": "procfs",
+          "unit": "MiB",
+          "value": 13.5546875
+        },
+        "successful_calls": {
+          "availability": "available",
+          "direction": "uac_to_uas",
+          "source": "sipp_csv",
+          "unit": "count",
+          "value": 5
+        }
+      },
+      "sipp_exit_code": 0,
+      "stage": "loss",
+      "status": "SUCCEEDED"
+    }
+  ]
+}

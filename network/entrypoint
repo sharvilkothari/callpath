@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+uid=${CALLPATH_UID:-1000}
+gid=${CALLPATH_GID:-1000}
+case "$uid:$gid" in *[!0-9:]*|:*|*:) exit 2;; esac
+[ "$uid" -gt 0 ] || exit 2
+group=$(getent group "$gid" | cut -d: -f1)
+if [ -z "$group" ]; then
+  groupadd -g "$gid" callpath
+  group=callpath
+fi
+useradd -K UID_MIN=1 -u "$uid" -g "$group" -d /tmp -s /usr/sbin/nologin callpath
+printf '127.0.1.1 %s\n' "$(hostname)" >> /etc/hosts
+install -d -m 0700 -o "$uid" -g "$gid" /run/callpath-work
+install -d -m 0700 /run/callpath-helper
+exec /usr/bin/setpriv --reuid "$uid" --regid "$gid" --clear-groups \
+  /usr/bin/python3 -m callpath "$@"

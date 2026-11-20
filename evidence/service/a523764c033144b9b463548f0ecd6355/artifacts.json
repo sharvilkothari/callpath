@@ -1,0 +1,80 @@
+[
+  {
+    "path": "baseline-soak-01/ami.jsonl",
+    "sha256": "52fdd7220653b7659e70662f4a804fc9be33c1cb65035b5b3f59466b4769267f",
+    "size_bytes": 16,
+    "type": "events"
+  },
+  {
+    "path": "baseline-soak-01/ami.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0,
+    "type": "log"
+  },
+  {
+    "path": "baseline-soak-01/asterisk-stderr.log",
+    "sha256": "b1a2f746d22f5b236ded1530fa40af001c967c4ea6682ed7ea51fd4e9619b59a",
+    "size_bytes": 68,
+    "type": "log"
+  },
+  {
+    "path": "baseline-soak-01/asterisk.log",
+    "sha256": "26eeb1ce1a25659054593acdf079059e02192889346673f9d5ef0e27950ceecd",
+    "size_bytes": 16216,
+    "type": "log"
+  },
+  {
+    "path": "baseline-soak-01/sipp-rx.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0,
+    "type": "log"
+  },
+  {
+    "path": "baseline-soak-01/sipp-rx.pcap",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-soak-01/sipp-tx.log",
+    "sha256": "74e2937ec35b41c86ed115f119c2725ecda114b33a5f26118319065dff443ce3",
+    "size_bytes": 89,
+    "type": "log"
+  },
+  {
+    "path": "baseline-soak-01/sipp-tx.pcap",
+    "sha256": "19d9f28e4891b71e12fad2fc4d59066bf0d80e3ab0158fd4fa5b22b371b84448",
+    "size_bytes": 24,
+    "type": "capture"
+  },
+  {
+    "path": "baseline-soak-01/trial.json",
+    "sha256": "cad2d3364a5a6389020925a13a85f05999d0d9661a4d8f275a374a7709e5c21e",
+    "size_bytes": 465,
+    "type": "record"
+  },
+  {
+    "path": "recovery.json",
+    "sha256": "656185614e07c1ffd14e6bef26141281edf878173eb84500035024c534e0a982",
+    "size_bytes": 227,
+    "type": "record"
+  },
+  {
+    "path": "report.json",
+    "sha256": "d475042b1e18d2feee5d4d97a488f2af03adfc123479d44aa32e4cc3431a8c53",
+    "size_bytes": 1222,
+    "type": "record"
+  },
+  {
+    "path": "report.md",
+    "sha256": "a35c94c7dc604c56ff1988d23eb39d9582090ee2a4240a831f2ca74b19847d61",
+    "size_bytes": 1438,
+    "type": "report"
+  },
+  {
+    "path": "snapshot.json",
+    "sha256": "e26997c3c8dc963af299208ad47b773c674e86d1fb4347f9eed430cb94eca3f4",
+    "size_bytes": 3853,
+    "type": "record"
+  }
+]

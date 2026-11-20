@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario name="CallPath transfer">
+  <send retrans="500" start_rtd="invite"><![CDATA[
+INVITE sip:[service]@[remote_ip]:[remote_port] SIP/2.0
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch];rport
+From: CallPath <sip:lab@[local_ip]:[local_port]>;tag=[call_number]
+To: <sip:[service]@[remote_ip]:[remote_port]>
+Call-ID: [call_id]
+CSeq: 1 INVITE
+Contact: <sip:lab@[local_ip]:[local_port]>
+X-CallPath-Run: [RUN_ID]
+Max-Forwards: 8
+Content-Type: application/sdp
+Content-Length: [len]
+
+v=0
+o=callpath 1 1 IN IP4 [media_ip]
+s=CallPath
+c=IN IP4 [media_ip]
+t=0 0
+m=audio [rtpstream_audio_port] RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+a=sendrecv
+  ]]></send>
+  <recv response="100" optional="true"/>
+  <recv response="180" optional="true"/>
+  <recv response="183" optional="true"/>
+  <recv response="200" rtd="invite" rrs="true" timeout="10000"/>
+  <send><![CDATA[
+ACK [next_url] SIP/2.0
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch];rport
+From: CallPath <sip:lab@[local_ip]:[local_port]>;tag=[call_number]
+To: <sip:[service]@[remote_ip]:[remote_port]>[peer_tag_param]
+Call-ID: [call_id]
+CSeq: 1 ACK
+Contact: <sip:lab@[local_ip]:[local_port]>
+Max-Forwards: 8
+Content-Length: [len]
+
+  ]]></send>
+  <pause/>
+  <send retrans="500"><![CDATA[
+REFER [next_url] SIP/2.0
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch];rport
+From: CallPath <sip:lab@[local_ip]:[local_port]>;tag=[call_number]
+To: <sip:[service]@[remote_ip]:[remote_port]>[peer_tag_param]
+Call-ID: [call_id]
+CSeq: 2 REFER
+Contact: <sip:lab@[local_ip]:[local_port]>
+Max-Forwards: 8
+Refer-To: <sip:7003@[remote_ip]:[remote_port]>
+Referred-By: <sip:lab@[local_ip]:[local_port]>
+Content-Length: [len]
+
+  ]]></send>
+  <recv response="202" timeout="8000"/>
+  <recv request="NOTIFY" timeout="8000"/>
+  <send><![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Content-Length: 0
+
+  ]]></send>
+  <recv request="NOTIFY" timeout="8000">
+    <action>
+      <ereg regexp="SIP/2.0 200" search_in="body" check_it="true" assign_to="xfer_status"/>
+    </action>
+  </recv>
+  <send><![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+[last_CSeq:]
+Content-Length: 0
+
+  ]]></send>
+  <pause milliseconds="2600"/>
+  <Reference variables="xfer_status"/>
+</scenario>

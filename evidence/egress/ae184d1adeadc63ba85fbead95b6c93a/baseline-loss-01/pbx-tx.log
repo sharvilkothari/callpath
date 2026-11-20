@@ -1,0 +1,4 @@
+tcpdump: listening on cp-tap-in, link-type EN10MB (Ethernet), snapshot length 1024 bytes
+615 packets captured
+615 packets received by filter
+0 packets dropped by kernel

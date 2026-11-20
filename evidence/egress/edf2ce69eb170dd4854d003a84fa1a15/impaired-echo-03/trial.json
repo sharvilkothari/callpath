@@ -1,0 +1,25 @@
+{
+  "id": "1d047c30262649c5990a926cc848a852",
+  "load": {
+    "calls": 5,
+    "concurrency": 6,
+    "cps": 2,
+    "hold_ms": 2000,
+    "timeout_s": 45
+  },
+  "profile": {
+    "burst_end_pct": 25,
+    "burst_start_pct": 0,
+    "delay_ms": 40,
+    "duplicate_pct": 0,
+    "jitter_ms": 10,
+    "loss_pct": 0,
+    "path": "both",
+    "placement": "egress",
+    "queue_limit": 1000,
+    "reorder_pct": 0,
+    "seed": 42,
+    "traffic": "rtp"
+  },
+  "stage": "echo"
+}
